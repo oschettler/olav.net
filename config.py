@@ -8,7 +8,7 @@ theme = "carbon"
 
 title = "olav.net"
 
-tagline = "digital content. gadgets. life."
+tagline = "digitalisierung. bildung. gesellschaft."
 
 extensions = ['holly']
 
