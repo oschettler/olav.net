@@ -2,6 +2,6 @@
 # This is a sample menu file. 
 ---
 
-* [Home](@root/)
+* [Home](https://schettler.net/)
 * [Blog](@root/blog//)
-* [About](@root/about//)
+* [About](https://schettler.net/imprint/)

@@ -1,0 +1,27 @@
+---
+title: Meine Blog-Maschine - Ivy und Holly
+author: Olav Schettler
+date: 2021-04-23
+tags: Blogging, Seitengenerator, digitaler Garten
+image: blog/scaffolding-1024.jpg
+---
+
+Ich habe an dieser Stelle schon so einige Stücke Software ausprobiert. [Anfangs statische Seiten](neuanfang), dann [Thatware](https://sourceforge.net/projects/thatware/), zuletzt über ganz lange Jahre Drupal.
+
+Inzwischen bin ich überzeugt davon, dass ein persönliches Weblog eine statische Seite sein sollte. Klar, das muss man alles aufsetzen und über das Bearbeiten von Textdateien einrichten, aber dann läuft es.
+
+Ganz wichtig dabei: Die Software für das Erzeugen der Seiten ist getrennt von dem, was man sich als Leser dann anschaut. Wenn alternativ, wie bei einem selbst betriebenen Drupal oder Wordpress, die Software für die Pflege gleichzeitig für die Darstellung zuständig ist, ist man in der Pflicht gefangen, die Software alle paar Wochen zu aktualisieren, um nicht Opfer von Sicherheitslücken zu werden. 
+
+Die Alternativen sind (a) Anmieten einer bezahlten Software, bei der jemand anderes die Aktualisierungen übernimmt. Sobald man aufhört zu zahlen, verschwinden auch die Inhalte. Oder (b) Nutzung eines kostenlosen Angebotes wie Tumblr, Wordpress oder - grauenvoller Gedanke - Posten über ein soziales Medium wie Instagram, Facebook oder Medium.
+
+Also. Ich möchte meine Inhalte in meinem eigenen, [digitalen Garten](https://joelhooks.com/digital-garden) pflegen. Und ja, ich fange mit einer Sortierung nach Datum an. Irgendwann werden weitere Taxonomien folgen, aber die Sortierung nach Zeit gibt mir dir Freiheit, unfertige Gedanken zu veröffentlichen.
+
+Für die Pflege gibt es inzwischen eine Unmenge statischer Seitengeneratoren wie Hugo, Jekyll oder Jigsaw. Ich habe mich für eine Python-basierende Software entschieden, weil sie klein und einfach ist: Ivy von Darren Mulholland mit dem Plugin [Holly](http://www.dmulholl.com/dev/holly.html). 
+
+Mit Ivy habe ich schon [an anderer Stelle](https://codekulturbonn.de) gute Erfahrungen gesammelt. Holly ergänzt das Grundsystem um die nötige Mechanik zum Bloggen. Natürlich kann ich mir noch ein paar mehr Features wie RSS-Feed, aufklappbare Outlines oder eine Suche vorstellen. Aber das muss alles auch nicht unbedingt sein oder kann vielleicht auch später dazu kommen. 
+
+Als Quelle starte ich mit statischen Dateien. Ich möchte aber bald auf einen Export aus Knowfox umsteigen, wie ich ihn auch schon für [schettler.net](https://schettler.net) und [blog.knowfox.com](https://blog.knowfox.com) eingerichtet habe, dort allerdings noch mit meinem eigenen Seitengenerator.
+
+Auf geht's!
+
+(Das Foto ist von [Jack B](https://unsplash.com/photos/S3SU988T13A))
