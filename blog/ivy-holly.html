@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meine Blog-Maschine - Ivy und Holly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../fonts.css">
+        <link rel="stylesheet" href="../carbon.css">
+        <link rel="stylesheet" href="../pygments.css">
+        
+        
+    </head>
+    <body class="node-blog-ivy-holly node-blog node">
+        <header class="masthead">
+            <h1><a href="../index.html">olav.net</a></h1>
+            
+                <p class="tagline">digitalisierung. bildung. gesellschaft.</p>
+            
+            <nav class="menu">
+                <input id="menu-check" type="checkbox"/>
+                <label id="menu-label" for="menu-check" class="unselectable">
+                    <span class="icon close-icon">✕</span>
+                    <span class="icon open-icon">☰</span>
+                    <span class="text">Menu</span>
+                </label>
+                <ul>
+<li><a href="https://schettler.net/">Home</a></li>
+<li><a href="../blog.html">Blog</a></li>
+<li><a href="https://schettler.net/imprint/">About</a></li>
+</ul>
+            </nav>
+        </header>
+        <article class="main">
+            <header class="title">
+                
+                    <h1>Meine Blog-Maschine - Ivy und Holly</h1>
+                
+                
+                    <p class="subtitle">
+                        April 23, 2021
+                    </p>
+                
+                <hr>
+            </header>
+
+            
+                <div class="image-strip">
+                    <img src="../images/blog/scaffolding-1024.jpg">
+                </div>
+            
+
+            <h2 id="statische-seiten">
+Statische Seiten
+</h2>
+<p>
+Ich habe an dieser Stelle schon so einige Stücke Software ausprobiert. <a href="neuanfang">Anfangs statische Seiten</a>, dann <a href="https://sourceforge.net/projects/thatware/">Thatware</a>, zuletzt über ganz lange Jahre Drupal.
+</p>
+<p>
+Inzwischen bin ich überzeugt davon, dass ein persönliches Weblog eine statische Seite sein sollte. Klar, das muss man alles aufsetzen und über das Bearbeiten von Textdateien einrichten, aber dann läuft es.
+</p>
+<p>
+Ganz wichtig dabei: Die Software für das Erzeugen der Seiten ist getrennt von dem, was man sich als Leser dann anschaut. Wenn alternativ, wie bei einem selbst betriebenen Drupal oder Wordpress, die Software für die Pflege gleichzeitig für die Darstellung zuständig ist, ist man in der Pflicht gefangen, die Software alle paar Wochen zu aktualisieren, um nicht Opfer von Sicherheitslücken zu werden.
+</p>
+<p>
+Die Alternativen sind (a) Anmieten einer bezahlten Software, bei der jemand anderes die Aktualisierungen übernimmt. Sobald man aufhört zu zahlen, verschwinden auch die Inhalte. Oder (b) Nutzung eines kostenlosen Angebotes wie Tumblr, Wordpress oder - grauenvoller Gedanke - Posten über ein soziales Medium wie Instagram, Facebook oder Medium.
+</p>
+<p>
+Also. Ich möchte meine Inhalte in meinem eigenen, <a href="https://joelhooks.com/digital-garden">digitalen Garten</a> pflegen. Und ja, ich fange mit einer Sortierung nach Datum an. Irgendwann werden weitere Taxonomien folgen, aber die Sortierung nach Zeit gibt mir die Freiheit, unfertige Gedanken zu veröffentlichen.
+</p>
+<p>
+Für die Pflege gibt es inzwischen eine Unmenge statischer Seitengeneratoren wie Hugo, Jekyll oder Jigsaw. Ich habe mich für eine Python-basierende Software entschieden, weil sie klein und einfach ist: Ivy von Darren Mulholland mit dem Plugin <a href="http://www.dmulholl.com/dev/holly.html">Holly</a>.
+</p>
+<p>
+Mit Ivy habe ich schon <a href="https://codekulturbonn.de">an anderer Stelle</a> gute Erfahrungen gesammelt. Holly ergänzt das Grundsystem um die nötige Mechanik zum Bloggen. Natürlich kann ich mir noch ein paar mehr Features wie RSS-Feed, aufklappbare Outlines oder eine Suche vorstellen. Aber das muss alles auch nicht unbedingt sein oder kann vielleicht auch später dazu kommen.
+</p>
+<h2 id="wo-schreiben">
+Wo schreiben?
+</h2>
+<p>
+Als Quelle starte ich mit statischen Dateien. Ich möchte aber bald auf einen Export aus Knowfox umsteigen, wie ich ihn auch schon für <a href="https://schettler.net">schettler.net</a> und <a href="https://blog.knowfox.com">blog.knowfox.com</a> eingerichtet habe, dort allerdings noch mit meinem eigenen Seitengenerator.
+</p>
+<p>
+In Knowfox hätte ich all meine Schreibe an einem Ort, könnte das Hochladen und Beschneiden von Bildern automatisieren und mir eine möglichst passende Editorumgebung anlegen. Andere nutzen ebenfalls ihre eigene Schreibumgebung. <a href="https://de.wikipedia.org/wiki/Dave_Winer">Dave Winer</a> z.B. <a href="http://this.how/scriptingNews/nightlyArchive.opml#1535904174000">schreibt</a> sein Blog in einem Outliner. Rek von 100 Rabbits hat sich mit <a href="https://100r.co/site/left.html">Left</a> einen eigenen Editor geschrieben.
+</p>
+<h2 id="wie-publizieren">
+Wie publizieren?
+</h2>
+<p>
+Das Publizieren erfolgt über Github Pages und Github Actions. Die Seiten für Code.Kultur.Bonn erzeuge ich noch mit Travis. Damals gab es Github Actions noch nicht. Damit benötige ich aber nur noch ein einziges System zum Verwalten und Erzeugen. Und ja, Github gehört inzwischen Microsoft. Seufz!
+</p>
+<h2 id="wo-publizieren">
+Wo publizieren?
+</h2>
+<p>
+Diese Seiten erscheinen auf meinem persönlichen Weblog, olav.net. Ich schreibe noch in anderen Umgebungen, jeweils mit einem anderen Themenschwerpunkt. Ich bin allerdings gar nicht so sicher, ob diese Zersplitterung eine gute Idee ist.
+</p>
+<ul>
+<li>
+<a href="https://blog.knowfox.com">blog.knowfox.com</a> berichtet über Neuigkeiten rund um mein persönliches Knowledge-Management-System Knowfox
+</li>
+<li>
+<a href="https://meetup.codekulturbonn.de">meetup.codekulturbonn.de</a> enthält Stücke zu Physical und Creative Computing. Frühere Beiträge hatte ich unter <a href="https://tinkerthon.de">tinkerthon.de</a> geschrieben.
+</li>
+<li>
+Manchmal stifte ich auch andere Wesen in meinem Umfeld zum Schreiben an. Selbst <a href="https://katzenleben.fritz.cat">unser Kater hat ein Weblog</a>. Man hört allerdings, das er Ghostwriter beschäftigt.
+</li>
+</ul>
+<p>
+Auf geht's!
+</p>
+<p>
+(Das Foto ist von <a href="https://unsplash.com/photos/S3SU988T13A">Jack B</a>)
+</p>
+
+            
+                <p class="tags">Tagged: &nbsp;<a href="../blog/tags/blogging.html">Blogging</a>,&nbsp; <a href="../blog/tags/seitengenerator.html">Seitengenerator</a>,&nbsp; <a href="../blog/tags/digitaler-garten.html">digitaler Garten</a></p>
+            
+
+            
+
+            
+
+            
+
+            
+
+        </article>
+        
+    </body>
+</html>
