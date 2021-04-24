@@ -1,7 +1,6 @@
 ---
-# This is a sample menu file. 
+# This is a sample menu file.
 ---
 
-* [Home](https://schettler.net/)
-* [Blog](@root/blog//)
-* [About](https://schettler.net/imprint/)
+* [schettler.net](https://schettler.net/)
+* [Impressum](https://schettler.net/imprint/)

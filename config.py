@@ -15,6 +15,9 @@ extensions = ['holly']
 holly = {
     "roots": [
         {"root_url": "@root/blog//"},
-    ]
+    ],
+    "homepage": {
+        "root_urls": ["@root/blog//"],
+    }
 }
 
