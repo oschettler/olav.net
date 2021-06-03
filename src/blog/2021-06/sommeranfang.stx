@@ -22,6 +22,6 @@ Hier ist Julians [Zusammenfassung der Argumente von Liebermann](https://kinopio.
 
 Achtbitcomputer haben mich schon immer fasziniert. Das waren und sind Computer die ein Einzelner vom Prozessor bis zur Peripherie vollständig verstehen kann. Seit ein paar Jahren (vielleicht schon immer) gibt es eine aktive Community, in der auch neue Hardware und Emulatoren entwickelt und gepflegt wird. Ich habe vor kurzem [Flexemu von Wolfgang Schwotzer](https://flexemu.neocities.org/) entdeckt, welches eine Microcomputer auf der Basis eines 6809-Prozessors emuliert.
 
-Anders als viele Rechner aus dieser Zeit läuft auf diesem Rechner nicht BASIC, sondern [das Betriebssystm FLEX]}(http://www.flexusergroup.com/flexusergroup/default.htm) und es gibt einiges an Compilern und Anwendungssoftware.
+Anders als viele Rechner aus dieser Zeit läuft auf diesem Rechner nicht BASIC, sondern [das Betriebssystm FLEX](http://www.flexusergroup.com/flexusergroup/default.htm) und es gibt einiges an Compilern und Anwendungssoftware.
 
 Flexemu lässt sich unter ElementaryOS oder auf dem RaspberryPi problemlos ans Laufen bringen und gibt mir die Chance, mit einigen Jahren Verspätung vom 6502 zum viel mächtigeren 6809 zu wechseln.
