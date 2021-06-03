@@ -1,0 +1,27 @@
+---
+title: Sommeranfang
+author: Olav Schettler
+date: 2021-06-01
+tags: 6809, Grundeinkommen
+image: blog/sommeranfang-1024.jpg
+---
+
+Heute am 1. Juni ist meteorologischer Sommeranfang. Gleichzeitig passieren viele Dinge. Heute beginnt zum Beispiel das auf drei Jahre angelegte Pilotprojekt zum bedingungslosen Grundeinkommen. Julian hatte dazu Anfang des Jahres eine Hausarbeit geschrieben, in der er die Argumente seines Professors, Sascha Liebermann mit den Positionen des damaligen Präsidenten des Instituts für Weltwirtschaft in Kiel, Horst Siebert verglichen hatte.
+
+Siebert bediente einmal mehr das seit dem Kaiserreich in unserem Sozialstaat verankerte Menschenbild, dass niemand freiwillig für das Gemeinwohl einstehe und nur durch Zwang dazu gebracht werden kann, für seinen eigenen Unterhalt zu sorgen.
+
+Er stellt damit in Abrede, dass die Mehrheit genügend Initiative aufbringen würde, auch ohne die Pflicht zur Lohnarbeit werteschaffende Leistungen zu erbringen.
+
+Gleichzeitig räumt er der wirtschaftlich erfolgreichen Minderheit das Recht ein, diese Mehrheit auszubeuten.
+
+Liebermann dagegen erinnert daran, dass unser Gemeinwesen schon jetzt überhaupt nur funktioniert, weil Menschen sich ohne Lohn für die Gemeinschaft einbringen, in der Familie oder durch Engagement in Bildung oder Gesellschaft.
+
+Wirtschaftsunternehmen nutzen dieses natürliche Engagement der Menschen und verwandeln es in eigene Profite. Dabei wird fließig [das Gemeingut](https://de.wikipedia.org/wiki/Commons) zum Nutzen weniger ausgebeutet.
+
+Hier ist Julians [Zusammenfassung der Argumente von Liebermann](https://kinopio.club/liebermann-18-bg-y86yc9EU0f4PmrLJUhNvN).
+
+Achtbitcomputer haben mich schon immer fasziniert. Das waren und sind Computer die ein Einzelner vom Prozessor bis zur Peripherie vollständig verstehen kann. Seit ein paar Jahren (vielleicht schon immer) gibt es eine aktive Community, in der auch neue Hardware und Emulatoren entwickelt und gepflegt wird. Ich habe vor kurzem [Flexemu von Wolfgang Schwotzer](https://flexemu.neocities.org/) entdeckt, welches eine Microcomputer auf der Basis eines 6809-Prozessors emuliert.
+
+Anders als viele Rechner aus dieser Zeit läuft auf diesem Rechner nicht BASIC, sondern [das Betriebssystm FLEX]}(http://www.flexusergroup.com/flexusergroup/default.htm) und es gibt einiges an Compilern und Anwendungssoftware.
+
+Flexemu lässt sich unter ElementaryOS oder auf dem RaspberryPi problemlos ans Laufen bringen und gibt mir die Chance, mit einigen Jahren Verspätung vom 6502 zum viel mächtigeren 6809 zu wechseln.
