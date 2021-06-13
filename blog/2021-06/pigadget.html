@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kleiner Computer mit Raspberry Pi Zero</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../fonts.css">
+        <link rel="stylesheet" href="../../carbon.css">
+        <link rel="stylesheet" href="../../pygments.css">
+        
+        
+    </head>
+    <body class="node-blog-2021-06-pigadget node-blog-2021-06 node-blog node">
+        <header class="masthead">
+            <h1><a href="../../index.html">olav.net</a></h1>
+            
+                <p class="tagline">digitalisierung. bildung. gesellschaft.</p>
+            
+            <nav class="menu">
+                <input id="menu-check" type="checkbox"/>
+                <label id="menu-label" for="menu-check" class="unselectable">
+                    <span class="icon close-icon">✕</span>
+                    <span class="icon open-icon">☰</span>
+                    <span class="text">Menu</span>
+                </label>
+                <ul>
+<li><a href="https://schettler.net/">schettler.net</a></li>
+<li><a href="https://codekulturbonn.de/">Code.Kultur.Bonn</a></li>
+<li><a href="https://blog.knowfox.com/">Knowfox Blog</a></li>
+<li><a href="https://schettler.net/imprint/">Impressum</a></li>
+</ul>
+            </nav>
+        </header>
+        <article class="main">
+            <header class="title">
+                
+                    <h1>Kleiner Computer mit Raspberry Pi Zero</h1>
+                
+                
+                    <p class="subtitle">
+                        June 13, 2021
+                    </p>
+                
+                <hr>
+            </header>
+
+            
+                <div class="image-strip">
+                    <img src="../../images/blog/pigadget-1024.jpg">
+                </div>
+            
+
+            <p>
+Kleine Computer sind voll im Trend. Begonnen hat dieser Trend in den 1970er Jahren mit den Homecomputern. Damals grenzten sie sich von den schrankgroßen Minicomputern ab und machten das erste Mal Computer für jedermann erschwinglich. Auf die erste Generation von Einplatinencomputern wie dem KIM-1, die sich noch vornehmlich an Bastler richteten, folgten Geräte wir der Apple II, der C64 oder der BBC Micro. Diese Computer basierten auf 8Bit-Prozessoren wie dem Z80, dem 6502 und - seltener - dem 6809. Sie starteten direkt die Programmiersprache BASIC und hatten meist umfangreiche Handbücher, die den Besitzern das Programmieren ihrer neuen Hausbewohner beibrachten.
+</p>
+<p>
+Diesen ersten Heimcomputern folgten Ende der 1980er Jahre leistungsfähigere 16Bit-Maschinen wie die ST-Computer von Atari, die Amigas von Commodore und die ersten Macintosh-Computer von Apple. Diese Vielfalt fiel dann leider in den 1990 Jahren den PC Clones mit erst MS-DOS und dann Windows zum Opfer.
+</p>
+<p>
+Ende der 1990er Jahre dachte man eigentlich, dass sich lokal installierte Anwendungen überlebt hätten und das ein Computer eigenlich nur noch einen Webbrowser beherbergen müsste. Allerdings erleben ja "Apps" durch die lukrativen Geschäfte im AppStore und PlayStore auf Desktop-Computern gerade eine Wiedergeburt.
+</p>
+<p>
+Trotz dieser Entwicklung seit den 90er Jahren waren die 8Bit-Maschinen nie ganz tot. Moderne Computer sind inzwischen leistungsfähig genug, dass sie die alten Maschinen komplett simulieren können. Die sogenannten Emulatoren gibt es meist frei verfügbar für jeden der alten 8Bit-Klassiker. So ist es heute immer noch möglich, die alten Spiele zu spielen oder sogar neue zu entwickeln.
+</p>
+<p>
+Abseits der reinen Emulation von klassischen Maschinen gibt es inzwischen, inspiriert vom Erfinder dieses Genres, PICO-8, unzählige Fantasiekonsolen. Fantasiekonsolen bringen den Spaß zurück, in einer eingeschränkten Programmierumgebung kreativ zu werden. In <a href="https://codekulturbonn.de/activities.html">einem Artikel zu möglichen Coding-Aktivitäten</a> habe ich ein paar davon beschrieben.
+</p>
+<p>
+Neben dem Erhalt dieser alten Software und dem Spaß daran, in wenig komplexen, realen oder Fantasiecomputern kreativ zu sein, gibt es auch noch die Ablehnung unnötiger Komplexität als Motivator, neue Geräte im Stil der alten 8Bit-Computer zu schaffen. Ein Beispiel ist die <a href="https://100r.co/site/uxn.html">virtuelle Maschine UXN</a> von 100 Rabbits. Die beiden Betreiber eines segelnden Entwicklerstudios portieren ihre Spiele und Werkzeuge auf diese selbst geschriebene Umgebung, um sich von der Abhängigkeit von großen, stromfressenden und proprietären Systemen zu lösen.
+</p>
+<p>
+Es gibt einen anderen Grund, möglichst einfache Computer zu bevorzugen. Langlebigkeit. In seinem Artikel <a href="https://thedorkweb.substack.com/p/the-100-year-computer">Der hundertjährige Computer</a> beschreibt Steve Lord seinen Weg hin zu einem anderen System aus der Zeit der 8-Bit-Computer, CP/M.
+</p>
+<p>
+Am Wochenende habe ich auf der Basis eines Raspberry Pi Zero, eines Siebenzoll-Displays und einer einfachen Holzkiste meinen eigenen Minicomputer gebaut.
+</p>
+<p>
+<img alt="Computer mit Raspberry Pi Zero" src="/images/blog/pi1-1024.jpg">
+<img alt="Computer mit Raspberry Pi Zero" src="/images/blog/pi2-1024.jpg">
+</p>
+<p>
+Normalerweise nutze ich eine alte Bluetooth-Tastatur aus einer iPad-Hülle für die Eingabe. Wenn ich eine Maus brauche (selten), kann ich aber auch eine Raspberry PI-Tastatur mit USB-Hub anschliessen.
+</p>
+<p>
+Auf dem Gerätchen läuft normalerweise keine grafische Oberfläche, sondern nur die Textkonsole. Mit <code>tmux</code> habe ich darin mehrere Fenster. In der Konsole könnte ich z.B. mit dem tollen Outliner <code>hnb</code> mein Leben organisieren in <code>sc</code> Tabellen berechnen, oder per <code>alpine</code> auf mein Gmail-Konto zugreifen.
+</p>
+<p>
+Ich kann aber auch <a href="https://codekulturbonn.de/tic80.html">per TIC-80 in Wren programmieren</a> oder mit den <a href="https://git.sr.ht/~rabbits/uxn/">UXN-Programmen von 100 Rabbits</a> herumspielen.
+</p>
+<p>
+Python läuft natürlich auch. Was will man eigentlich mehr?
+</p>
+
+            
+                <p class="tags">Tagged: &nbsp;<a href="../../blog/tags/small-computers.html">Small Computers</a></p>
+            
+
+            
+
+            
+
+            
+
+            
+
+        </article>
+        
+    </body>
+</html>
