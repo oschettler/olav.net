@@ -18,6 +18,8 @@ Abseits der reinen Emulation von klassischen Maschinen gibt es inzwischen, inspi
 
 Neben dem Erhalt dieser alten Software und dem Spaß daran, in wenig komplexen, realen oder Fantasiecomputern kreativ zu sein, gibt es auch noch die Ablehnung unnötiger Komplexität als Motivator, neue Geräte im Stil der alten 8Bit-Computer zu schaffen. Ein Beispiel ist die [virtuelle Maschine UXN](https://100r.co/site/uxn.html) von 100 Rabbits. Die beiden Betreiber eines segelnden Entwicklerstudios portieren ihre Spiele und Werkzeuge auf diese selbst geschriebene Umgebung, um sich von der Abhängigkeit von großen, stromfressenden und proprietären Systemen zu lösen.
 
+Ganz passend zu dem Thema machte mich [ein Post](https://merveilles.town/@neauoire/106404485853402110) von einem der beiden 100 Rabbits im Fediverse auf [den Workshop zu Computing within Limits](https://computingwithinlimits.org/2021/) aufmerksam, der heute und morgen mit einigen interessanten Papers im Netz läuft.
+
 Es gibt einen anderen Grund, möglichst einfache Computer zu bevorzugen. Langlebigkeit. In seinem Artikel [Der hundertjährige Computer](https://thedorkweb.substack.com/p/the-100-year-computer) beschreibt Steve Lord seinen Weg hin zu einem anderen System aus der Zeit der 8-Bit-Computer, CP/M.
 
 Am Wochenende habe ich auf der Basis eines Raspberry Pi Zero, eines Siebenzoll-Displays und einer einfachen Holzkiste meinen eigenen Minicomputer gebaut.
