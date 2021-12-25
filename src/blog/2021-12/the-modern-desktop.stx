@@ -21,7 +21,7 @@ Neben dieser sehr prominenten Schreibtischoberfläche gibt es noch die Ordner im
 
 Stattdessen bearbeiten, laden und speichern sie Dateien in Apps. Unter Windows werden dazu meist die Office-Programme von Microsoft genutzt. Diese haben eine irre Art, Dateien zu präsentieren. Nutzer speichern - wenn überhaupt - ihre Dateien dort, wo immer diese Programme es ihnen anbieten. Die Dateien sind dann auch nur innerhalb der Apps über Funktionen wie *zuletzt verwandt* wieder auffindbar. Die Frage "Wo hast du die Datei gespeichert?" wird demnach häufig mit "In Word" statt mit dem Ablageort im Dateisystem beantwortet.
 
-Anstatt Nutzern das Dateisystem und seine Ordner näher zu bringen, verstecken Microsoft und Apple diese eher und machen Nutzer so noch mehr von ihren jeweiligen Apps abhängig. Für Nutzer ist so nicht mehr der Computer ihre Werkbank, sondern sind es die jeweiligen Hersteller-Apps.
+Anstatt Nutzern das Dateisystem und seine Ordner näher zu bringen, verstecken Microsoft und Apple diese eher und machen Nutzer so noch mehr von ihren jeweiligen Apps abhängig. Für Nutzer ist so nicht mehr der Computer ihre Werkbank, sondern es sind die jeweiligen Hersteller-Apps.
 
 macOS und ElementaryOS bieten mit dem erweiteren Desktop eingebaute Unterstützung für Multitasking. Hier ein Screenshot des Wechsels zwischen virtuellen Desktops unter ElementaryOS:
 
@@ -31,7 +31,7 @@ Wenn man weiß, dass es solche Möglichkeiten gibt, läßt sich so etwas auch un
 
 Unter Linux allgemein lassen sich auch andere Desktop-Umgebungen installieren. Von dieser Freiheit und der dadurch möglichen Innovationskraft können Nutzer unter Windows und macOS nur träumen. Eine interessante Spielart sind *Tiling Window Manager* wie z.B. **i3**. In i3 überlappen Fenster im allgemeinen nicht. Dadurch lässt sich die Fensterverwaltung in weiten Teilen komplett über die Tastatur steuern. Auch in i3 sind virtuelle Desktops integriert und sehr einfach über die Tastatur nutzbar.
 
-Wenn man einen kleinen Bildschirm hat, nur wenige Apps nutzt oder vielleicht sogar viel in der Befehlszeile arbeitet, ist i3 perfekt. Die wenigen Tastaturbefehle sind schnell zu erlernen und durch die virtuellen Desktops lässt sich die Arbeit auch bei einem kleinen Bildschirm gut strukturieren.
+Wenn man einen kleinen Bildschirm hat, nur wenige Apps nutzt oder vielleicht sogar viel in der Befehlszeile arbeitet, ist i3 nicht schlecht. Die wenigen Tastaturbefehle sind schnell zu erlernen und durch die virtuellen Desktops lässt sich die Arbeit auch bei einem kleinen Bildschirm gut strukturieren. Aber es geht besser...
 
 ## Der Desktop muss weg!
 
@@ -39,9 +39,11 @@ Warum aber muss diese liebgewonnene Schreibtischmetapher weg? Schauen wir uns di
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yJDv-zdhzMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Hier ist [eine Zusammenfassung in unter fünf Minuten](https://www.youtube.com/watch?v=B6rKUf9DWRI).
+
 Der Titel der Demo war *Augmenting Human Intellect*. Das ist es, was Computer eigentlich versprachen zu tun. Davon ist am heimischen Arbeitsplatz noch nicht viel angekommen. Am typischen Arbeitsplatz eines Knowledge Workers übrigens meist noch weniger, ist die Auswahl an Werkzeugen doch meist durch die Corporate IT auf eine kleine Anzahl Officeprogramme (immer noch meist vom Hersteller Microsoft, obwohl es seit Jahren bessere Alternativen gibt, z.B. [LibreOffice](https://de.libreoffice.org/)) beschränkt, deren atemberaubend geistlosen und gleichzeitig irre vollgestopften Nutzeroberflächen durch *Policies* der firmeneigenen Officepolizei an willkürlichen Stellen eingeschränkt oder durch hauseigene Tools erweitert ist.
 
-Seit wenigen Jahren boomt die Kategorie [Tools for Thought](https://github.com/jamesonl/awesome-tools-for-thought) mit Vertretern wie [Logseq](https://logseq.com) oder [Workflowy](https://workflowy.com). Wahrscheinlich hat die Kategorie durch die Digitalisierung des Zettelkastens des Bielefelder Soziologen Niklas Luhmann breite Aufmerksamkeit bekommen. Hier ist als Beispuel der Zettel [Zettelkasten als kybernetisches System](https://niklas-luhmann-archiv.de/bestand/zettelkasten/zettel/ZK_2_NB_9-8_V) in Luhmanns Zettelkasten. 
+Seit wenigen Jahren boomt die Kategorie [Tools for Thought](https://github.com/jamesonl/awesome-tools-for-thought) mit Vertretern wie [Logseq](https://logseq.com) oder [Workflowy](https://workflowy.com). Wahrscheinlich hat die Kategorie durch die Digitalisierung des Zettelkastens des Bielefelder Soziologen Niklas Luhmann breite Aufmerksamkeit bekommen. Hier ist als Beispiel der Zettel [Zettelkasten als kybernetisches System](https://niklas-luhmann-archiv.de/bestand/zettelkasten/zettel/ZK_2_NB_9-8_V) in Luhmanns Zettelkasten. 
 
 Digitale Vertreter dieser Denkwerkzeuge sind oft Wikis oder Outliner, zwei wohl- und lange bekannte Kategorien. Wikis bieten bidirektionale Verlinkung und über eine spezielle Notation, meist über doppelte eckige Klammern (**[[** Überschrift **]]**) einen einfachen Weg, vorhandene Beiträge zu finden oder neue zu erzeugen. 
 
@@ -59,7 +61,7 @@ Hier ist ein Kinopio-Space für das Thema dieses Artikels:
 
 <div class="kinopio-embed" style="height: 420px; width: 100%;"><iframe src="https://kinopio.club/embed/?spaceId=897SzK8i8mrWhuLCEIupS&zoom=100" style="height: 100%; width: 100%; border: 0; border-radius: 5px;"></iframe></div>
 
-Ein weiteres Merkmal beider Anwendungen ist die Möglichkeit der Zusammenarbeit. In Miro ebenso wie in Kinopio kann ich weitere Nutzer in einen Space einladen und mit ihnen zusammenarbeiten. 
+Ein weiteres Merkmal beider Anwendungen ist die Möglichkeit der Zusammenarbeit. In Miro, ebenso wie in Kinopio, kann ich weitere Nutzer in einen Space einladen und mit ihnen zusammenarbeiten. 
 
 Miro unterstützt weiter noch die handschriftlich Eingabe per Stift.
 
@@ -68,9 +70,10 @@ Damit haben wir meinen Wunschzettel für einen Desktop der nächsten Generation 
 * Zooming und Panning auf einer unendlichen Arbeitsfläche statt getrennte, virtuelle Schreibtische
 * Platzieren und Bearbeiten beliebiger Objekte auf der Arbeitsfläche
 * Bidirektionale, typisierte Beziehungen statt strikte Hierarchien
+* Stifteingabe
 * Zusammenarbeit
 
-Wenn wir weiter unsere Wissensarbeit unter die Geiselhaft von Microft und Apple stellen und uns mit Technolgie begnügen, die diese Monopolisten Anfang der 1990er durch Abgucken bei den Forschern von Xerox PARC zusammengemixt haben, werden unsere PCs das Versprechen der Erweiterung des Intellektes, den uns die Visionäre der 1960er Jahre versprachen, nicht einlösen. 
+Wenn wir weiter unsere Wissensarbeit mit Technologie beschränken, die Apple und Microsoft Anfang der 1990er durch Abgucken bei den Forschern von Xerox PARC zusammengemixt und seither wegen ihrer Duopolstellung nicht modernisieren mussten, werden unsere PCs (und erst recht nicht unsere Mobilgeräte) das Versprechen der Erweiterung des Intellektes, den uns die Visionäre der 1960er Jahre versprachen, nicht einlösen. 
 
-Aber Hoffnung ist in Sicht! Die Initiative [Public Money? Public Code!](https://fsfe.org/activities/publiccode/publiccode.de.html) der Free Software Foundation Europe hilft, mehr freie Software als Basis von Innovation in Umlauf zu bringen. Die neue Bundesregierung [arbeitet an digitaler Souveränität](https://www.bundesregierung.de/breg-de/service/publikationen/schwerpunktstudie-digitale-souveraenitaet-1981176). Das ganze wird allerdings mindestens eine Dekade dauern. Aber hey, wir werden seit über 30 Jahren gehirngewaschen. Da werden erst ein paar Dinosaurier aussterben müssen, bis auch der öffentliche Dienst aufhört, seine Wissenarbeiter durch [#80er-IT](https://twitter.com/hashtag/80erIT) auszubremsen.
+Aber Hoffnung ist in Sicht! Die Initiative [Public Money? Public Code!](https://fsfe.org/activities/publiccode/publiccode.de.html) der Free Software Foundation Europe hilft, mehr freie Software als Basis von Innovation in Umlauf zu bringen. Die neue Bundesregierung arbeitet nach 30 Jahren des Stillstandes an [digitaler Souveränität](https://www.bundesregierung.de/breg-de/service/publikationen/schwerpunktstudie-digitale-souveraenitaet-1981176). Das ganze wird allerdings mindestens eine Dekade dauern. Aber hey, wir werden seit über drei Dekaden gehirngewaschen. Da werden erst ein paar Dinosaurier aussterben müssen, bis irgendwann selbst der öffentliche Dienst aufhört, seine Wissenarbeiter durch [#80er-IT](https://twitter.com/hashtag/80erIT) auszubremsen.
 
