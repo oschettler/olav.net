@@ -35,18 +35,42 @@ Wenn man einen kleinen Bildschirm hat, nur wenige Apps nutzt oder vielleicht sog
 
 ## Der Desktop muss weg!
 
-Warum aber muss diese liebgewonnene Schreibtischmetapher weg? Schauen wir uns die Möglichkeiten an, die Douglas Engelbart in seiner visionären [Mother of all Demos](https://www.youtube.com/watch?v=yJDv-zdhzMY) in 1968 vorführte:
+Warum aber muss diese liebgewonnene Schreibtischmetapher weg? Schauen wir uns die Möglichkeiten an, die Doug Engelbart in seiner visionären [Mother of all Demos](https://www.youtube.com/watch?v=yJDv-zdhzMY) im Dezember 1968 vorführte:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yJDv-zdhzMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Der Titel der Demo war *Augmenting Human Intellect*. Das ist es, was Computer eigentlich versprachen zu tun. Davon ist am heimischen Arbeitsplatz noch nicht viel angekommen. Am typischen Arbeitsplatz eines Knowledge Workers übrigens meist noch weniger, ist die Auswahl an Werkzeugen doch meist durch die Corporate IT auf eine kleine Anzahl Officeprogramme beschränkt, deren atemberaubend geistlosen und gleichzeitig irre vollgestopften Nutzeroberflächen durch *Policies* der firmeneigenen Officepolizei an willkürlichen Stellen eingeschränkt oder durch hauseigene Tools erweitert ist.
+Der Titel der Demo war *Augmenting Human Intellect*. Das ist es, was Computer eigentlich versprachen zu tun. Davon ist am heimischen Arbeitsplatz noch nicht viel angekommen. Am typischen Arbeitsplatz eines Knowledge Workers übrigens meist noch weniger, ist die Auswahl an Werkzeugen doch meist durch die Corporate IT auf eine kleine Anzahl Officeprogramme (immer noch meist vom Hersteller Microsoft, obwohl es seit Jahren bessere Alternativen gibt, z.B. [LibreOffice](https://de.libreoffice.org/)) beschränkt, deren atemberaubend geistlosen und gleichzeitig irre vollgestopften Nutzeroberflächen durch *Policies* der firmeneigenen Officepolizei an willkürlichen Stellen eingeschränkt oder durch hauseigene Tools erweitert ist.
 
-Seit wenigen Jahren boomt die Kategorie [Tools for Thought](https://github.com/jamesonl/awesome-tools-for-thought) mit Vertretern wie [Logseq](https://logseq.com) oder [Workflowy](https://workflowy.com). Wahrscheinlich hat die Kategorie durch die Digitalisierung des Zettelkastens des Bielefelder Soziologen Niklas Luhmans breite Aufmerksamkeit bekommen. Übrigens keine Angst vor den gefährlich aussehenden Fehlermeldungen. Die UNi Bielefeld hat nur übersehen, dass das Zertifikat der Webseite am 2021-12-24 ausläuft:
+Seit wenigen Jahren boomt die Kategorie [Tools for Thought](https://github.com/jamesonl/awesome-tools-for-thought) mit Vertretern wie [Logseq](https://logseq.com) oder [Workflowy](https://workflowy.com). Wahrscheinlich hat die Kategorie durch die Digitalisierung des Zettelkastens des Bielefelder Soziologen Niklas Luhmann breite Aufmerksamkeit bekommen. Hier ist als Beispuel der Zettel [Zettelkasten als kybernetisches System](https://niklas-luhmann-archiv.de/bestand/zettelkasten/zettel/ZK_2_NB_9-8_V) in Luhmanns Zettelkasten. 
 
-![Luhmannarchiv - abgelaufenes Zertifikat](/images/blog/luhmann-zertifikat.png)
+Digitale Vertreter dieser Denkwerkzeuge sind oft Wikis oder Outliner, zwei wohl- und lange bekannte Kategorien. Wikis bieten bidirektionale Verlinkung und über eine spezielle Notation, meist über doppelte eckige Klammern (**[[** Überschrift **]]**) einen einfachen Weg, vorhandene Beiträge zu finden oder neue zu erzeugen. 
 
-Vertreter dieser Denkwerkzeuge sind oft Wikis oder Outliner, zwei wohl- und lange bekannte Kategorien. Wikis bieten bidirektionale Verlinkung und über eine spezielle Notation, meist über doppelte eckige Klammern (**[[** Überschrift **]]**) einen einfachen Weg, vorhandene Beiträge zu finden oder neue zu erzeugen. 
+Ältere Vertreter der Gattung *Notizprogramme* wie Evernote oder Microsoft Onenote sind zwar gute Speicher für unstrukturierte Texte. Sie bieten aber wenige Strukturierungsmöglichkeiten und sind daher vielleicht nützliche Gedächtnisstützen, helfen aber wenig bei der Entwicklung von Ideen. 
 
 *Outliner* oder deutsch Gliederungseditoren gibt es seit den späten 1980er Jahren und es kommen immer wieder neue Varianten auf den Markt. Dave Winer war ein früher Entwickler solcher Gliederungseditoren und betreibt [eine Archivseite](http://outliners.scripting.com/).
 
-tbc.
+Wegen der Aufregung um das Programm *Roam Research*, eine Art persönlichem Wiki, verbreitet sich gerade dessen Wiederentdeckung der eckigen Klammern **[[...]]** auch auf Outliner. Workflowy und Dave Winers neues Tool [Drummer](http://drummer.scripting.com/) haben sie bereits eingebaut.
+
+Aber ich will hier nicht über Features von PKM-Tools (*Personal Knowledge Management*) sprechen. Vielmehr scheint mir diese Kategorie gut geeignet, Elemente einer neuen Nutzeroberfläche für Desktop-Computer zu liefern. Aber es gibt noch weitere Kandidaten.
+
+Online-Angebote wie [Miro](https://miro.com) oder [Kinopio](https://kinopio.club) ermöglichen das Platzieren von Objekten auf einer unendlich großen Leinwand. Microsoft Whiteboard gehört mangels Nutzbarkeit ausdrücklich nicht in diese Kategorie.
+
+Hier ist ein Kinopio-Space für das Thema dieses Artikels:
+
+<div class="kinopio-embed" style="height: 420px; width: 100%;"><iframe src="https://kinopio.club/embed/?spaceId=897SzK8i8mrWhuLCEIupS&zoom=100" style="height: 100%; width: 100%; border: 0; border-radius: 5px;"></iframe></div>
+
+Ein weiteres Merkmal beider Anwendungen ist die Möglichkeit der Zusammenarbeit. In Miro ebenso wie in Kinopio kann ich weitere Nutzer in einen Space einladen und mit ihnen zusammenarbeiten. 
+
+Miro unterstützt weiter noch die handschriftlich Eingabe per Stift.
+
+Damit haben wir meinen Wunschzettel für einen Desktop der nächsten Generation zusammen:
+
+* Zooming und Panning auf einer unendlichen Arbeitsfläche statt getrennte, virtuelle Schreibtische
+* Platzieren und Bearbeiten beliebiger Objekte auf der Arbeitsfläche
+* Bidirektionale, typisierte Beziehungen statt strikte Hierarchien
+* Zusammenarbeit
+
+Wenn wir weiter unsere Wissensarbeit unter die Geiselhaft von Microft und Apple stellen und uns mit Technolgie begnügen, die diese Monopolisten Anfang der 1990er durch Abgucken bei den Forschern von Xerox PARC zusammengemixt haben, werden unsere PCs das Versprechen der Erweiterung des Intellektes, den uns die Visionäre der 1960er Jahre versprachen, nicht einlösen. 
+
+Aber Hoffnung ist in Sicht! Die Initiative [Public Money? Public Code!](https://fsfe.org/activities/publiccode/publiccode.de.html) der Free Software Foundation Europe hilft, mehr freie Software als Basis von Innovation in Umlauf zu bringen. Die neue Bundesregierung [arbeitet an digitaler Souveränität](https://www.bundesregierung.de/breg-de/service/publikationen/schwerpunktstudie-digitale-souveraenitaet-1981176). Das ganze wird allerdings mindestens eine Dekade dauern. Aber hey, wir werden seit über 30 Jahren gehirngewaschen. Da werden erst ein paar Dinosaurier aussterben müssen, bis auch der öffentliche Dienst aufhört, seine Wissenarbeiter durch [#80er-IT](https://twitter.com/hashtag/80erIT) auszubremsen.
+
