@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>{{ node.meta_title || node.title || site.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mailto:olav@schettler.net" rel="me">
         <link href="https://bonn.social/@olav" rel="me">
         <link rel="stylesheet" href="@root/fonts.css">
         <link rel="stylesheet" href="@root/carbon.css">
