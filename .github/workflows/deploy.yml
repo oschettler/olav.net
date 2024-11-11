@@ -28,7 +28,7 @@ jobs:
     # Build the site
     - name: Build the site
       run: |
-        python -mivy build
+        python -mark build
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action

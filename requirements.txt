@@ -1,12 +1,2 @@
-argslib==2.0.1
-colorama==0.4.4
-holly==0.3.0
-ibis==3.2.0
-ivy==5.1.0
-Jinja2==2.11.3
-Markdown==3.3.4
-MarkupSafe==1.1.1
-Pygments==2.8.1
-PyYAML==5.4.1
-shortcodes==5.1.1
-syntext==2.8.1
+ark==7.6.1
+holly==2.0.0
