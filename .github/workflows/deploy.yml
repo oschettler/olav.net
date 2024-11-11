@@ -1,12 +1,9 @@
-# Deploy via Ivy/Holly
+# Deploy via Ark/Holly
 
 on:
   push:
     branches:
     - main
-    paths:
-    - src/**
-    - assets/**
 
 jobs:
   deploy:
