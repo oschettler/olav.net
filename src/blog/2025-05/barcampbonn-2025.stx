@@ -23,13 +23,41 @@ Es machte Spaß, mit den Karten zunächst grundsätzliche Fähigkeiten von KIs p
 
 Sessiongeber: Benedikt Metzen
 
+Mein Kollege Benedikt stellte zur Diskussion, wie Lehren aus Projekten gezogen werden können.
+Die berechtigte Frage von Askan war: "Was ist das Ziel?"
+
+Wir haben dann ein wenig über die Sinnhaftigkeit von solchen Erhebungen __nach__ Abschluss eines Projektes. Die Diskussion ging insgesamt dahin, dass Retrospektiven im Projektverlauf sinnhafter sind.
+
+Bei der Diskussion fiel mir eine andere Sichtweise ein: **Playbooks**. Mir schwebt vor, dass man - ähnlich zu Architekturmustern oder Design Patterns - knifflige Situationen und ihre Lösung schematisch erfassen und dann als Playbook weiterentwickeln könnte. Ähnlich zum [Portland Pattern Repository](https://c2.com/ppr/).
+
 ## Früher war alles? vieles? einiges? nix? besser?
 
 Sessiongeber: Michael Koopmann
 
+Von dieser Session (parallel zu der von Benedikt) habe ich leider nur das Ende mitbekommen und mit ein paar Tools und Adressen gemerkt:
+
+- [yunohost.org](https://yunohost.org/) - With YunoHost, easily manage a server, a cloud, a website, mailboxes, a wikia social network, a video library, a blog, surveys, an accounting board, a game server, a forum, a chat, an ERP for your friends, your association, your company
+
+- [#unplugtrump](https://social.tchncs.de/tags/UnplugTrump) - Eine Aktion von [Mike Kuketz](https://www.kuketz-blog.de/unplugtrump-mach-dich-digital-unabhaengig-von-trump-und-big-tech/) mit kleinen, aber wirkungsvollen Tools, um sich digital von Trump und den großen Tech-Oligarchen abzukoppeln und gleichzeitig eine gerechtere, unabhängige Digitalwelt zu fördern
+
+- [bonnerblogs.de](https://bonnerblogs.de) - Der Klassiker
+
+- [Blogparaden](https://www.google.com/search?q=blogparade) - Schreiben über das Schreiben
+
 ## Demokratie wehrhaft machen
 
 Sessiongeberin: Berit
+
+Ein paar Links und Schlagworte aus der Session:
+
+- [Ralf Knoblauch](https://ralfknoblauch.de/) baut kleine Könige
+- [Bonn Institute](https://www.bonn-institute.org/) versucht konstruktiven Journalismus in die Welt zu tragen. Ja, ich hatte den Namen zuerst, aber leider nicht geschützt.
+- [Bonn4Future](https://bonn4future.de) vom Bonn im Wandel e.V.
+- Der [Bonner Generalanzeiger](https://ga.de/) hat dasselbe Problem wie viele kommerziellen redaktionelle Sites - Ihre Titel sind Klickbait.
+- Die [Volksverpetzer](https://www.volksverpetzer.de/) entstanden als Blog, widmen sich sei 2015 vor allem Hetze und Fake News.
+- [correktiv](https://correctiv.org/) ein gemeinwohlorientiertes Medienhaus, organisiert als gGmbH
+- [Quartiermanagement in Bonn](https://www.bonn.de/themen-entdecken/soziales-gesellschaft/leben-im-quartier.php)
+- [Gesa Maschkowski](https://www.alanus.edu/de/hochschule/menschen/detail/gesa-maschkowski) lehrt an der Alanus-Hochschule
 
 ## Fediverse + Weltrettung
 
