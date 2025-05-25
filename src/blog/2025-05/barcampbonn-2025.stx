@@ -2,10 +2,10 @@
 title: Barcamp Bonn 2025
 author: Olav Schettler
 date: 2025-05-18
-tags: Barcamp Bonn
+tags: Barcamp Bonn, bcbn25
 image: blog/bcbn25.png
 ---
-Am Samstag war wieder Barcamp, das 10. Ich wollte erst gar nicht hingehen, bin dann aber doch. Aber es hat sich gelohnt! Ein pralles Programm mit interessanten Sessions, viele Begebnungen mit alten Bekannten und neuen Gesichtern, leckeres _all veggie_ Catering und eine Terasse mit unbezahlbarem Blick auf das Siebengebirge.
+Am letzten Samstag war wieder Barcamp, das 10. Ich wollte erst gar nicht hingehen, bin dann aber doch. Aber es hat sich gelohnt! Ein pralles Programm mit interessanten Sessions, viele Begebnungen mit alten Bekannten und neuen Gesichtern, leckeres _all veggie_ Catering und eine Terasse mit unbezahlbarem Blick auf das Siebengebirge.
 
 In diesen Sessions war ich:
 
@@ -15,7 +15,7 @@ Sessiongeber: Toni Fetzer, Lisa Zander
 
 [im Session-Plan](https://barcampbonn.de/sessions/#session/NCLRLU/)
 
-Die beiden Mitarbeiter des Barcamp-Sponsors cronn GmbH haben hier einen stark verkürzten EInblick in ihr Workshop-Format gegeben. Ein Stabel Karten, jede für eine KI-Fähigkeit, wird von den Workshop-Teilnehmern auf die Schritte eines zu elektrifizierenden Prozesses gelegt. Daraus wird dann in den nächsten Schritten zunächst User Stories und dann die Konzeption eines MVPs abgeleitet.
+Die beiden Mitarbeiter des Barcamp-Sponsors cronn GmbH gaben hier einen stark verkürzten Einblick in ihr Workshop-Format gegeben. Ein Stapel Karten, jede für eine KI-Fähigkeit, wird von den Workshop-Teilnehmern auf die Schritte eines zu elektrifizierenden Prozesses gelegt. Daraus wird dann in den nächsten Schritten zunächst User Stories und dann die Konzeption eines MVPs abgeleitet.
 
 Es machte Spaß, mit den Karten zunächst grundsätzliche Fähigkeiten von KIs platzieren zu können. Die späteren Workshop-Schritte passten dann natürlich nicht in die Dreiviertelstunde, aber ich kann mir gut vorstellen, dass man mit diesem Format schnell zu umsetzbaren MVPs kommt.
 
@@ -26,7 +26,7 @@ Sessiongeber: Benedikt Metzen
 Mein Kollege Benedikt stellte zur Diskussion, wie Lehren aus Projekten gezogen werden können.
 Die berechtigte Frage von Askan war: "Was ist das Ziel?"
 
-Wir haben dann ein wenig über die Sinnhaftigkeit von solchen Erhebungen __nach__ Abschluss eines Projektes. Die Diskussion ging insgesamt dahin, dass Retrospektiven im Projektverlauf sinnhafter sind.
+Wir diskutierten dann ein wenig über die Sinnhaftigkeit von solchen Erhebungen __nach__ Abschluss eines Projektes. Die Diskussion ging insgesamt dahin, dass Retrospektiven im Projektverlauf sinnvoller sind.
 
 Bei der Diskussion fiel mir eine andere Sichtweise ein: **Playbooks**. Mir schwebt vor, dass man - ähnlich zu Architekturmustern oder Design Patterns - knifflige Situationen und ihre Lösung schematisch erfassen und dann als Playbook weiterentwickeln könnte. Ähnlich zum [Portland Pattern Repository](https://c2.com/ppr/).
 
@@ -52,7 +52,7 @@ Ein paar Links und Schlagworte aus der Session:
 
 - [Ralf Knoblauch](https://ralfknoblauch.de/) baut kleine Könige
 - [Bonn Institute](https://www.bonn-institute.org/) versucht konstruktiven Journalismus in die Welt zu tragen. Ja, ich hatte den Namen zuerst, aber leider nicht geschützt.
-- [Bonn4Future](https://bonn4future.de) vom Bonn im Wandel e.V.
+- [Bonn4Future](https://bonn4future.de) vom [Bonn im Wandel e.V.](https://bonnimwandel.de/)
 - Der [Bonner Generalanzeiger](https://ga.de/) hat dasselbe Problem wie viele kommerziellen redaktionelle Sites - Ihre Titel sind Klickbait.
 - Die [Volksverpetzer](https://www.volksverpetzer.de/) entstanden als Blog, widmen sich sei 2015 vor allem Hetze und Fake News.
 - [correktiv](https://correctiv.org/) ein gemeinwohlorientiertes Medienhaus, organisiert als gGmbH
@@ -61,19 +61,38 @@ Ein paar Links und Schlagworte aus der Session:
 
 ## Fediverse + Weltrettung
 
-Sessiongeber: Gunnar Sohn
+Sessiongeber: [Gunnar Sohn](https://ichsagmal.com/barcamp-bonn-zwischen-dachterrasse-denkraeumen-und-datenbrillen-bcbn25/)
+
+Lustig: Gunnar hat die Session direkt als Podcast verarbeitet. Ich kam erst gegen Ende dazu. 
+
+Ein paar Links aus der Session:
+
+- [Lemmyverse](https://en.wikipedia.org/wiki/Lemmy_(social_network)) - kannte ich nicht. Die Wikipedia-Seite beschreibt es als "a federated alternative to Reddit".
+- Sascha empfielt das Buch [The Internet Con von Cory Doctorow](https://craphound.com/category/internetcon/). 
+- [MeidasTouch](https://de.wikipedia.org/wiki/MeidasTouch). Inzwischen verwandelt in "pro-democracy news network" MTN.
+- [Bert Brechts Radiotheorie](https://de.wikipedia.org/wiki/Radiotheorie#Brechts_Radiotheorie)
+- [Stephan Poromkbka](https://de.wikipedia.org/wiki/Stephan_Porombka)
+- [Save Social](https://savesocial.eu/)
+- [Thomas "droid boy" Riedel](https://www.droid-boy.de/) will Bloggen stärken.
+
 
 ## AI-Washing - Über KI-Zauberstäbe lachen
 
-Sessiongeber: Damian
+Sessiongeber: [Damian](https://paderta.com/)
+
+Damian ist der Mensch hinter dem [Bonn-o-Mat](https://bonn-o-mat.de/). 
 
 ## Let's talk about Stadtentwicklung
 
 Sessiongeber: Thomas Schönberger
 
+- Bonn hat ein Team für [UDM Urban Data Management](https://www.bonn.de/themen-entdecken/planen-bauen/urban-data-management.php)
+
 ## Makerspace: Angebot! Zukunft?
 
 Sessiongeber: Peter
+
+Wir haben übe die Aktivitäten gesprochen, den Makerspace mehr in die Innenstadt und an Schulen zu bringen. Aktuell gibt es dazu leider keine Initiativen.
 
 Dieses Mal gab es als Experiment nach der Abschluss-Session um 17 Uhr und den Würstchen vom Grill (auch veggie :) ) noch zwei Batches mit Abendsessions.
 
@@ -81,10 +100,12 @@ Dieses Mal gab es als Experiment nach der Abschluss-Session um 17 Uhr und den W�
 
 Sessiongeber: Stefan Wolfrum
 
+[Stefan](https://bonn.social/@metawops) ist einer der beiden Gründer des Makerspace Bonn und Data Scientist bei der Telekom. Er hatte seinen [THAT THe Analog Thing](https://the-analog-thing.org/) Analog-Computer dabei ([bonn.social](https://bonn.social/@metawops/114433069136243822)). Es gibt ein paar spannende Anwendungsfälle for Analogcomputer.
+
 Ich habe auch einige Sessions verpasst, die ich wegen des vollen Plans nicht besuchen konnte - FOMO!!
 
 - Modellbau mit Bewegung und Licht in der Box (Oliver Krings)
-- Digitale Transformation in Bonn (Uwe)
+- Digitale Transformation in Bonn (Uwe Feddern)
 - Die schönste Zeit des Lebens - Abschied nehmen im Hospiz (Daniel Fitzke)
 - Was sind meine Werte und wie beeinflussen sie bewusst oder unbewusst meine Entscheidungen (Tanja Kibogo)
 - Frage; Wie gehst du vor, um deine Herausforderungen zu lösen? (Anja)
