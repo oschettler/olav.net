@@ -1,0 +1,31 @@
+---
+title: Eine Tilde im Büro
+author: Olav Schettler
+date: 2026-01-11
+tags: Personal server, Betriebssysteme, 80er IT
+image: blog/not-complicated-1024.jpg
+---
+Eine Tilde im Büro - das wär's doch?
+
+Letzte Woche habe ich ein paar Kolleg:innen versucht, einen Ordner mit Dateien in einem Git-Repository als Basis für die Zusammenarbeit bei einer LLM-Einführung schmackhaft zu machen. Unterstützt von dem Editor in Gitlab, den man einfach durch Drücken von "." im Browser aufrufen kann. Zu kompliziert, fanden sie. 
+
+Ich habe eingelenkt und das ganze nach Confluence portiert, aber die Erfahrung nagt an mir. Sind Ordner und Markdown-Dateien wirklich zu kompliziert für unsere Knowledge Worker, Menschen, die mit dem irren Durcheinander in Microsoft Office Tools oder mit der Button-Apokalypse in OpenMedia gelernt haben, zurecht zu kommen?
+
+Ich glaube das einfach nicht. Wir reden es ihnen nur ein und glauben vielleicht selbst daran.
+
+Ich denke, wir sollten endlich anfangen, gegenzusteuern. Gerade jetzt, wo Large Language Models, integriert in einen Editor, unglaublich gut mit Ordnern und Textdateien umzugehen lernen. Ich habe bisher vor allem mit Erweiterungen des Microsoft Editors Visual Studio Code Erfahrung gemacht, bin aber gespannt auf Zed, für den ebenfalls eine [Integration mit LLMs angekündigt](https://zed.dev/blog/fastest-ai-code-editor) wurde.
+
+Ein erster Schritt wäre, die krass produktive, vernetzte Umgebung wieder jedem Büromenschen zur Verfügung zu stellen, die Anfang der 1990er Jahre allgegenwärtig war und durch verfehlte Produktpolitik und fehlende Medienbildung schleichend aus unserem Alltag verschwunden ist.
+
+Also:
+
+- Zugang zu Rechnern mit UNIX-Befehlszeile (CLI - Command Line Interface) per Secure Shell für jeden Büromenschen
+- Geteilte Home Directories, per NFS (Network File System) oder sonstwie
+- Zugang zu einfachen Tools für Scripting und Automatisierung auf der Befehlszeile: Cron, Mail, Python, SQlite, AWK, Bash, Curl, NetCat. Lasst uns nicht auch noch die nächste Generation an [Vaporware](https://www.reddit.com/r/AI_Agents/comments/1ojyu8p/i_build_ai_agents_for_a_living_its_a_mess_out/?show=original) verlieren!
+- Publishing per HTTP im internen Netz: https://arbeitgeber.de/~olav, einfach durch Dateien in einem Ordner public_html im Home Directory
+- Git als Standardwerkzeug zur Zusammenarbeit. OK, oder etwas leicher Verdauliches wie [Fossil](https://fossil-scm.org/)
+
+Und was bedeutet jetzt das *Tilde* in der Überschift dieses Artikels? Das [Tildeverse](https://tildeverse.org/) ist eine Bewegung, die Menschen im Alltag wieder Zugang zu Befehlszeilen geben will. Sie beziehen sich dabei auf das Zeichen Tilde "~", welches traditionell für das Heimatverzeichnis einer Nutzerin auf UNIX-Betriebssystemen steht. 
+
+Anreißerbild von <a href="https://unsplash.com/de/@jontyson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jon Tyson</a> auf <a href="https://unsplash.com/de/fotos/turkisfarbene-und-weisse-graffiti-wand-QgoNPoH1v4c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
+      
