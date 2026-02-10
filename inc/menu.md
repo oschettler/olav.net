@@ -7,4 +7,4 @@
 * [Knowfox Blog](https://blog.knowfox.com/)
 * [Bonn.Café](https://bonn.cafe)
 * [Topper-Jolle](https://redshift.bonn.cafe)
-* [Impressum](https://schettler.net/imprint/)
+* [Über diese Seiten](/about.html)
