@@ -1,0 +1,161 @@
+---
+title: Warum die Infrastruktur öffentlich-rechtlicher Medien Open Source sein sollte
+author: Olav Schettler
+date: 2026-02-13
+tags: Opensource
+image: blog/enterprise-oss-2024.jpg
+---
+# Warum die Infrastruktur öffentlich-rechtlicher Medien Open Source sein sollte
+
+*Disclaimer: Die in diesem Beitrag vertretenen Ansichten sind meine persönlichen Meinungen und spiegeln nicht die Position meines Arbeitgebers wider.*
+
+Als Software-Architekt bei der Deutschen Welle erlebe ich täglich eine paradoxe Situation: Unsere Institution ist dem Gemeinwohl verpflichtet und wird aus öffentlichen Mitteln finanziert. Doch unsere technische Infrastruktur basiert weitgehend auf proprietärer Software – nicht weil dies eine bewusste strategische Entscheidung gegen Open Source wäre, sondern weil es über Jahrzehnte zur Normalität geworden ist.
+
+## Das eigentliche Problem: Gewohnheit statt Strategie
+
+Die Herausforderung beginnt nicht in der IT-Abteilung, sondern bei den Fachanwendern. Video-Teams verlangen nach Adobe Premiere, weil sie es seit Jahren kennen. Produktionsabteilungen wollen Avid, weil es "der Industriestandard" ist. Redaktionen setzen auf Microsoft Office, weil sie es von der Uni mitbringen. Diese Wünsche sind verständlich – sie entspringen jahrzehntelanger Prägung durch eine Branche, die von proprietären Anbietern dominiert wird.
+
+Das Problem liegt tiefer: Die meisten Fachanwender haben nie eine Alternative kennengelernt. Ihre Ausbildung, ihre bisherigen Arbeitgeber, die Konferenzen, die sie besuchen – überall begegnen sie denselben Produkten. Open-Source-Alternativen existieren oft nicht einmal in ihrem Bewusstsein. Und wenn doch, dann als "komplizierte Bastellösungen" für Enthusiasten, nicht als professionelle Werkzeuge für ernsthafte Arbeit.
+
+Eine Unternehmens-IT, die sich gegen diese Wünsche stellt und statt vordergründig moderner, glänzend verpackter und scheinbar perfekt integrierter proprietärer Lösungen auf Open-Source-Software setzt, steht vor einer Argumentationslast. Sie muss nicht nur technisch überzeugen, sondern auch kulturell – gegen Jahrzehnte gewachsener Gewohnheiten.
+
+Dieser Artikel will diese Argumentationsgrundlage liefern. Nicht mit ideologischen Appellen, sondern mit Fakten, Studien und Beispielen, die zeigen: Open Source ist nicht nur eine machbare Alternative, sondern langfristig die wirtschaftlichere, innovativere und nachhaltigere Wahl.
+
+## Das Microsoft-Problem: Vendor Lock-in unter dem Deckmantel der Agilität
+
+Besonders deutlich wird die Problematik bei der fast vollständigen Abhängigkeit vieler öffentlich-rechtlicher Medien von Microsoft. Der aktuelle "Citizen Developer"-Ansatz mit PowerAutomate, PowerApps und PowerBI suggeriert Maleability und Selbstbestimmung: "Jeder kann entwickeln! Keine IT-Abteilung nötig!" Die Realität sicht anders aus.
+
+Die Tools sind überkomplex. PeerSpot-Nutzer berichten von fundamentalen Limitationen wie der "Delegation Issue" – PowerApps kann maximal 2.000 Datensätze auf einmal verarbeiten.[^1] Bei einer Oracle-Datenbank mit 150.000 Datensätzen bedeutet das: Nutzer müssen extensive Filterlogik implementieren, bevor sie überhaupt Daten sehen können. Ein Nutzer formuliert es deutlich: "Der Azure Data Layer kompliziert die Umgebung erheblich. Das minimal erforderliche Wissen bedeutet: Citizen Developer werden mit PowerApps nicht unabhängig sein."[^1]
+
+Die versprochene Einfachheit erweist sich als Illusion. Eine Studie von Pi Digital Solutions trägt den sprechenden Titel "The Rise and Fall of the Citizen Developer" und stellt fest: "Die Komplexität der heutigen digitalen Landschaft bedeutet, dass Unternehmen es sich nicht mehr leisten können, Non-Professional Developers den gesamten Prozess verwalten zu lassen – es sei denn, sie sind bereit, erhebliche technische und nicht-technische Risiken zu akzeptieren."[^2]
+
+Selbst Microsoft intern benötigt massive Governance-Strukturen. Das Microsoft Digital Team beschreibt aufwendige Center-of-Excellence-Strukturen, Data Loss Prevention Policies, Tenant Isolation, komplexe Approval-Prozesse[^3] – das Gegenteil der versprochenen Citizen-Developer-Einfachheit.
+
+Und das Wichtigste: Die vermeintliche Maleability ist ein Feigenblatt für noch mehr Vendor Lock-in. Appsmith nennt es beim Namen: "Die Plattform ist proprietär, was zu Vendor Lock-in führt und zukünftige Migration einschränkt."[^4] WeWeb formuliert drastischer: "Sie können Ihren PowerApps-Code nicht exportieren. Sie können nicht selbst hosten. Wenn Microsoft Preise erhöht oder Bedingungen ändert, sind Sie gefangen."[^5]
+
+Die Lizenzierung ist chaotisch. MSDynamicsWorld kommentiert: "Ich kann mich nicht an eine chaotischere Lizenz in der Microsoft Business Apps-Welt erinnern."[^6] Microsoft hat 2025 die Per-App-Lizenzierung ersatzlos gestrichen – Kunden, die darauf aufgebaut haben, müssen migrieren oder drastisch mehr zahlen.[^6]
+
+## Wirtschaftlichkeit: Die Zahlen sprechen für sich
+
+Eine umfassende Studie für das UK Cabinet Office kam zu eindeutigen Ergebnissen: Über einen Fünfjahreszeitraum sind die Gesamtkosten von Open-Source-Software regelmäßig niedriger als die von proprietären Alternativen.[^7] Selbst Microsoft-finanzierte TCO-Studien mussten eingestehen, dass GNU/Linux "unter bestimmten Umständen" eine ebenso gute TCO wie Windows aufweist. Diese Studien verschwanden später von der Microsoft-Website.[^8]
+
+**Lizenzkosten** fallen wiederkehrend an. Adobe's Umstellung auf Abo-Modelle zwang viele Organisationen zur fundamentalen Budgetänderung. Microsoft's Office 365-Migration erforderte komplette Infrastrukturveränderungen. Avid's Preiserhöhungen trieben manche Produktionsfirmen an den Rand. In jedem Fall hatten Kunden keine Wahl.
+
+**Lock-in-Kosten** sind die teuersten: Proprietäre Dateiformate und APIs schaffen Abhängigkeiten. Je länger man ein System nutzt, desto höher die Ausstiegsbarrieren.
+
+Der häufigste Einwand: "Open Source verursacht höhere Personalkosten." Langfristig ist die Investition in eigene Kompetenz wirtschaftlicher. Der UK Government Digital Service formuliert: "Wir können interessante Arbeit bieten – wenn wir Open Source nutzen, sehen Entwickler genau, an welchem Code sie arbeiten würden."[^9]
+
+## Innovation: Wie Open Source bessere Ergebnisse liefert
+
+IBM Research stellt fest: "Open Innovation beschleunigt standardmäßig das Tempo der Innovation, wenn weniger Zeit darauf verwendet wird, proprietäre Technologien zu duplizieren und Ideen organisationsübergreifend geteilt werden."[^10] GitHub berichtet, dass über 56 Millionen Entwickler weltweit zu Open-Source-Projekten beitragen[^11] – ein Netzwerk, das kein einzelnes Unternehmen aufbauen könnte.
+
+**Konkrete Beispiele:** Die BBC unterhält 18 Organisationen auf GitHub mit 115 aktiven Mitgliedern – mehr als ITV, Channel 4 und Sky UK zusammen.[^12] Die Coalition for Content Provenance and Authenticity (C2PA), ein Open-Standard für Content-Authentifizierung, wurde von BBC R&D mitinitiiert und umfasst heute 38 Mitglieder, darunter Adobe und Microsoft.[^13]
+
+Das UK Government Digital Service zeigt ähnliche Erfolge. GOV.UK, gestartet 2012 auf Open-Source-Basis, hostet heute über 20.000 Websites auf einer Plattform[^9] – bei einem Bruchteil der Kosten traditioneller Government-IT-Projekte.
+
+## Europäische Vorreiter: La Suite und openDesk
+
+Europa macht ernst mit digitaler Souveränität. Frankreichs **La Suite numérique**, entwickelt von DINUM in Zusammenarbeit mit Deutschland und den Niederlanden, ist eine vollständige Open-Source-Bürosuite für die öffentliche Verwaltung.[^14] Über 500.000 Beamte in 15 Ministerien nutzen bereits Tools wie Tchap (600.000 Nutzer, basierend auf Matrix), Visio (Videokonferenzen), Grist (Datenbanken) und FranceTransfert (Dateitransfer).[^15] Das Besondere: La Suite basiert auf Open-Source-Standards wie Matrix, LiveKit und Grist Core und wird in enger europäischer Kollaboration entwickelt.[^16]
+
+Deutschland's **ZenDiS** (Zentrum für Digitale Souveränität) wurde 2022 als zentrale Bundesbehörde gegründet.[^17] Mit **openDesk** bietet ZenDiS eine vollständige Open-Source-Arbeitsplatzumgebung, die bereits von der Ministerpräsidentenkonferenz, dem Robert-Koch-Institut und dem Internationalen Strafgerichtshof in Den Haag genutzt wird.[^18] openDesk integriert Element (Kommunikation), Nextcloud (Dateien), OpenProject (Projektmanagement) und weitere bewährte Open-Source-Tools.[^19] Bis Ende 2025 sollen 160.000 Lizenzen in deutschen Behörden ausgerollt werden.[^18]
+
+Was beide Initiativen auszeichnet: Sie entwickeln gemeinsam. Deutschland und Frankreich arbeiten intensiv zusammen – das Docs-Tool von La Suite entstand in deutsch-französischer Kollaboration.[^20] Ein Memorandum of Understanding zwischen beiden Ländern unterstreicht Europas Commitment für digitale Souveränität.[^21]
+
+## ARD und EBU: Erfolgreiche Zusammenarbeit im Open-Source-Bereich
+
+Die ARD und die European Broadcasting Union (EBU) beweisen, dass öffentlich-rechtliche Medien erfolgreich in Open Source kollaborieren können:
+
+**Streaming OS**: ARD und ZDF haben ihre Streaming-Plattform-Technologie als Open Source freigegeben. Das gemeinsame Projekt umfasst Media Player, Recommendation Engine, Login-Komponenten und weitere Systeme.[^22] ARD-Vorsitzender Kai Gniffke: "Wenn andere Institutionen die Software nutzen, könnte dies der Nukleus für eine größere zukünftige deutschsprachige Plattform sein."[^22]
+
+**MXL SDK**: Die EBU hat in Zusammenarbeit mit BBC, SWR, SR und CBC/Radio-Canada den Media eXchange Layer als Open-Source-SDK unter der Linux Foundation veröffentlicht – entwickelt in nur sieben Monaten.[^23] Das Projekt schafft Vendor-neutrale Live-Produktionssysteme.
+
+**EAR Production Suite**: Eine Kollaboration zwischen BBC Research & Development und dem Institut für Rundfunktechnik (IRT, gemeinsam von ARD, ZDF, ORF und SRG getragen) für immersive Audio-Produktion.[^24] Die Open-Source-VST-Plugins ermöglichen Next Generation Audio und werden beim Eurovision Song Contest eingesetzt.[^24]
+
+**Public Spaces Incubator**: ZDF und ARD treiben dieses internationale Projekt mit über 100 funktionalen Prototypen voran. Neun wurden zu Minimum Viable Products weiterentwickelt.[^22] Das Projekt fördert offene Kollaboration zwischen Broadcastern.
+
+Die EBU betreibt 140 GitHub-Repositories[^25] und organisiert regelmäßige Open-Source-Workshops (OSMART)[^26], an denen Broadcaster weltweit teilnehmen. Dies zeigt: Die Infrastruktur für kollaborative Open-Source-Entwicklung im Broadcasting-Bereich existiert bereits.
+
+## Praktische Schritte
+
+**Konkrete Open-Source-Lösungen für Medienhäuser:**
+
+- **Content Management**: WordPress, Drupal (New York Times, Guardian, Economist)
+- **Video**: DaVinci Resolve (teilweise Open Source), Kdenlive, FFmpeg (Broadcast-Standard)
+- **Asset Management**: ResourceSpace, AtoM
+- **Analytics**: Apache Superset (Alternative zu Power BI)
+- **Infrastruktur**: Linux, PostgreSQL, MariaDB, Nextcloud, Matrix/Element
+- **Entwicklung**: Git, GitLab, Jenkins, Kubernetes
+
+Für nahezu jeden Anwendungsfall gibt es ausgereifte Open-Source-Lösungen.
+
+**Incrementeller Wandel:**
+
+1. Neue Projekte auf Open Source aufbauen
+2. Auslaufende Verträge durch Open Source ersetzen
+3. Hybride Lösungen akzeptieren
+4. Kompetenzaufbau parallel betreiben
+
+**Public Money, Public Code**: Software, die mit öffentlichen Geldern entwickelt wird, sollte als Open Source veröffentlicht werden. Die EBU könnte – analog zu den erfolgreichen Beispielen – eine zentrale Rolle als Koordinator spielen. ARD-Anstalten sollten verstärkt mit anderen europäischen Broadcastern kollaborieren, wie es ZDF und SWR bereits mit La Suite und openDesk tun.
+
+## Häufige Einwände widerlegt
+
+**"Open Source ist unsicherer":** Sicherheit durch Verheimlichung ist gescheitert. Das IEEE: "Die Sicherheit wird verbessert, da der Code von der Community gründlich bewertet wird."[^27]
+
+**"Support gibt es nur bei kommerziellen Anbietern":** Falsch. Red Hat, Canonical, Automattic bieten professionellen Support. Man kauft Support als Dienstleistung, nicht als Paket mit der Software.
+
+**"Die Umstellung ist zu teuer":** Die UK Cabinet Office-Studie zeigt: Eine Total-Cost-of-Ownership-Betrachtung fällt fast immer zugunsten von Open Source aus – wenn man langfristig denkt.[^7]
+
+**"Unsere Mitarbeiter sind daran gewöhnt":** Gewöhnung ist kein Argument gegen bessere Lösungen. Die Frage ist: Wollen wir eine Kultur permanenter Abhängigkeit von Herstellerschulungen, oder eine Kultur des Verstehens?
+
+## Fazit: Fakten statt Ideologie
+
+Die Entscheidung für Open Source ist keine ideologische, sondern eine faktenbasierte Frage:
+
+**Wirtschaftlich** schneidet Open Source besser ab (UK Cabinet Office, Linux Professional Institute, akademische Studien).
+
+**Innovativ** ist Open Source überlegen (IBM Research, IEEE, GitHub-Analysen, BBC und UK GDS demonstrieren es praktisch).
+
+**Souverän** macht Open Source durch Unabhängigkeit, Transparenz und Kontrolle – wie La Suite, openDesk und die ARD/EBU-Projekte beweisen.
+
+Die Argumente gegen Open Source halten einer faktenbasierten Analyse nicht stand. Im Gegenteil: Die Abhängigkeit von proprietärer Software – besonders von Microsoft-Ökosystemen, die echte Maleability nur vortäuschen – schafft Risiken und kommt langfristig teurer.
+
+Als Software-Architekt erlebe ich täglich Konsequenzen von Technologieentscheidungen, die aus Gewohnheit statt Strategie entstanden. Ich sehe ausufernde Lizenzkosten, Vendor Lock-in trotz "Citizen Developer"-Versprechen, Unmöglichkeit echter Anpassung, Wissensverlust in Blackboxes.
+
+Aber ich sehe auch Möglichkeiten: BBC, UK GDS, La Suite, openDesk, ARD/EBU-Kollaborationen zeigen, dass Open Source funktioniert. Nicht als Bastellösung, sondern als professionelle, wirtschaftliche, innovative Alternative.
+
+Es ist Zeit für evidenzbasierte, schrittweise Transformation. Öffentlich-rechtliche Medien sollten Vorreiter sein – nicht obwohl, sondern weil sie dem Gemeinwohl verpflichtet sind. Die Technologie, die wir mit öffentlichen Mitteln betreiben, sollte selbst ein öffentliches Gut sein.
+
+Die Frage ist nicht, ob wir diesen Weg gehen sollten. Die Frage ist, wann wir anfangen – und wie wir die erfolgreichen europäischen und internationalen Kollaborationen als Vorbild nutzen.
+
+---
+
+[^1]: PeerSpot: "What needs improvement with Microsoft PowerApps" (https://www.peerspot.com/questions/what-needs-improvement-with-microsoft-powerapps-question579009)
+[^2]: Pi Digital Solutions (2024): "The rise and fall of the citizen developer" (https://pidigitalsolutions.com/citizen-developer-power-platform/)
+[^3]: Microsoft Inside Track (2025): "Empowering and Securing our Citizen Developers with the Microsoft Power Platform" (https://www.microsoft.com/insidetrack/blog/empowerment-with-good-governance-how-our-citizen-developers-get-the-most-out-of-the-microsoft-power-platform/)
+[^4]: Appsmith (2025): "Top 10 Power Apps Alternatives" (https://www.appsmith.com/blog/power-apps-alternatives)
+[^5]: WeWeb: "PowerApps Alternatives: 10 Best Platforms (No Microsoft Lock-In)" (https://www.weweb.io/blog/powerapps-alternatives)
+[^6]: MSDynamicsWorld (2025): "Microsoft to end sale of Power Apps per app license" (https://msdynamicsworld.com/story/microsoft-end-sale-power-apps-app-license)
+[^7]: UK Cabinet Office (2011): "Total cost of ownership of open source software"
+[^8]: Linux Professional Institute (2023): "Open Source Myth: That It Has a Higher Total Cost of Ownership" (https://www.lpi.org/blog/2023/03/10/open-source-myth-it-has-higher-total-cost-ownership-tco/)
+[^9]: Open Access Government (2022): "Why the government is backing open source software" (https://www.openaccessgovernment.org/why-the-government-is-backing-open-source-software/140839/)
+[^10]: IBM Research (2023): "Driving deliberate innovation with open-source software" (https://research.ibm.com/blog/deliberate-innovation-open-source-osi)
+[^11]: The Agents of Transformation: "The Role of Open-Source Software in Accelerating Innovation" (https://theagentsoftransformation.com/the-role-of-open-source-software-in-accelerating-innovation/)
+[^12]: Nesta: "Public service coding: the BBC as an open software developer" (https://www.nesta.org.uk/blog/public-service-coding-the-bbc-as-an-open-software-developer/)
+[^13]: OpenUK (2024): "BBC Standards from State of Open" (https://openuk.uk/case-studies/case-study-bbc-standards/)
+[^14]: GitHub: "La Suite numérique" (https://github.com/suitenumerique)
+[^15]: La Suite numérique (https://lasuite.numerique.gouv.fr/en)
+[^16]: Sinologic: "France chooses Open Source to secure European Sovereignty" (https://www.sinologic.net/en/2026-01/france-chooses-open-source-to-secure-european-sovereignty.html/)
+[^17]: ZenDiS: "Our mission" (https://www.zendis.de/en/our-mission)
+[^18]: OpenProject (2025): "Digital sovereignty in Government: German State Premiers and the International Criminal Court choose openDesk" (https://www.openproject.org/blog/digital-sovereignty-government-germany-opendesk/)
+[^19]: Element: "Matrix | Germany | openDesk | ZenDiS" (https://element.io/en/matrix-in-germany/projects/opendesk)
+[^20]: Hacker News: "France's homegrown open source online office suite" (https://news.ycombinator.com/item?id=46923736)
+[^21]: Interoperable Europe Portal (2024): "Building European Collaboration: 'La suite'" (https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/building-european-collaboration-la-suite)
+[^22]: EBU (2024): "Germany's public broadcasters help drive international Public Spaces Incubator and open their streaming technology to more innovation" (https://www.ebu.ch/news/2024/10/germany's-public-broadcasters-help-drive-international-public-spaces-incubator-and-open-their-streaming-technology-to-more-innov)
+[^23]: EBU Technology & Innovation (2025): "EBU, Linux Foundation and NABA launch open source MXL SDK for software-based Media Exchange" (https://tech.ebu.ch/news/2025/06/ebu-launches-open-source-mxl-sdk-for-software-based-media-exchange)
+[^24]: Interoperable Europe Portal (2025): "Open Source Powers Eurovision" (https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/open-source-powers-eurovision)
+[^25]: GitHub: "European Broadcasting Union" (https://github.com/EBU)
+[^26]: EBU Technology & Innovation (2025): "Oh smart! Strengthening collaboration on open-source software for media" (https://tech.ebu.ch/news/2025/04/oh-smart-strengthening-collaboration-on-open-source-software-for-media)
+[^27]: IEEE Standards Association (2024): "Inspiring and Accelerating Open Source Innovation" (https://standards.ieee.org/beyond-standards/inspiring-and-accelerating-open-source-innovation/)
+
+Foto von <a href="https://unsplash.com/de/@rha2503">Ruddi Hansen</a> auf <a href="https://unsplash.com/de/fotos/ein-leuchtturm-auf-einem-dock-Xj4wUpVZ-n0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
