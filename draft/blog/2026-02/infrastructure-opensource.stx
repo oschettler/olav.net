@@ -5,8 +5,6 @@ date: 2026-02-13
 tags: Opensource
 image: blog/enterprise-oss-2024.jpg
 ---
-# Warum die Infrastruktur öffentlich-rechtlicher Medien Open Source sein sollte
-
 *Disclaimer: Die in diesem Beitrag vertretenen Ansichten sind meine persönlichen Meinungen und spiegeln nicht die Position meines Arbeitgebers wider.*
 
 Als Software-Architekt bei der Deutschen Welle erlebe ich täglich eine paradoxe Situation: Unsere Institution ist dem Gemeinwohl verpflichtet und wird aus öffentlichen Mitteln finanziert. Doch unsere technische Infrastruktur basiert weitgehend auf proprietärer Software – nicht weil dies eine bewusste strategische Entscheidung gegen Open Source wäre, sondern weil es über Jahrzehnte zur Normalität geworden ist.
@@ -23,7 +21,7 @@ Dieser Artikel will diese Argumentationsgrundlage liefern. Nicht mit ideologisch
 
 ## Das Microsoft-Problem: Vendor Lock-in unter dem Deckmantel der Agilität
 
-Besonders deutlich wird die Problematik bei der fast vollständigen Abhängigkeit vieler öffentlich-rechtlicher Medien von Microsoft. Der aktuelle "Citizen Developer"-Ansatz mit PowerAutomate, PowerApps und PowerBI suggeriert Maleability und Selbstbestimmung: "Jeder kann entwickeln! Keine IT-Abteilung nötig!" Die Realität sicht anders aus.
+Besonders deutlich wird die Problematik bei der fast vollständigen Abhängigkeit vieler öffentlich-rechtlicher Medien von Microsoft. Der aktuelle "Citizen Developer"-Ansatz mit PowerAutomate, PowerApps und PowerBI suggeriert Maleability und Selbstbestimmung: "Jeder kann entwickeln! Keine IT-Abteilung nötig!" Die Realität sieht anders aus.
 
 Die Tools sind überkomplex. PeerSpot-Nutzer berichten von fundamentalen Limitationen wie der "Delegation Issue" – PowerApps kann maximal 2.000 Datensätze auf einmal verarbeiten.[^1] Bei einer Oracle-Datenbank mit 150.000 Datensätzen bedeutet das: Nutzer müssen extensive Filterlogik implementieren, bevor sie überhaupt Daten sehen können. Ein Nutzer formuliert es deutlich: "Der Azure Data Layer kompliziert die Umgebung erheblich. Das minimal erforderliche Wissen bedeutet: Citizen Developer werden mit PowerApps nicht unabhängig sein."[^1]
 
@@ -34,6 +32,26 @@ Selbst Microsoft intern benötigt massive Governance-Strukturen. Das Microsoft D
 Und das Wichtigste: Die vermeintliche Maleability ist ein Feigenblatt für noch mehr Vendor Lock-in. Appsmith nennt es beim Namen: "Die Plattform ist proprietär, was zu Vendor Lock-in führt und zukünftige Migration einschränkt."[^4] WeWeb formuliert drastischer: "Sie können Ihren PowerApps-Code nicht exportieren. Sie können nicht selbst hosten. Wenn Microsoft Preise erhöht oder Bedingungen ändert, sind Sie gefangen."[^5]
 
 Die Lizenzierung ist chaotisch. MSDynamicsWorld kommentiert: "Ich kann mich nicht an eine chaotischere Lizenz in der Microsoft Business Apps-Welt erinnern."[^6] Microsoft hat 2025 die Per-App-Lizenzierung ersatzlos gestrichen – Kunden, die darauf aufgebaut haben, müssen migrieren oder drastisch mehr zahlen.[^6]
+
+### Versteckte Kosten: Komplexität, Fachkräftemangel und Innovationsstau
+
+Die Kosten der Power Platform gehen weit über Lizenzgebühren hinaus. Die vermeintliche Einfachheit der Low-Code-Werkzeuge erzeugt eine technische Schuld, die sich über Jahre aufbaut. FreeCodeCamp warnt: "Low-Code-Plattformen entfernen die traditionelle Reibung, die normalerweise zu bewusster Entwicklung zwingt. Weniger Einstiegshürden ermöglichen Geschwindigkeit, schaffen aber ohne Intentionalität eine Umgebung, die aktiv die Anhäufung technischer Schulden fördert."[^28] Unternehmen haben in ihren Power-Platform-Umgebungen bis zu 400.000 Apps angehäuft – viele davon verwaist, aber weiterhin API-Aufrufe, Speicher und Premium-Lizenzen verbrauchend.[^29]
+
+Im Vergleich dazu bieten bewährte, textbasierte Werkzeuge wie Python volle Flexibilität bei der Abbildung komplexer Geschäftslogik, native Versionskontrolle über Git und deutlich geringere Wartungskosten.[^30] Teams, die auf Python-basierte Automatisierung setzen, erzielen den höchsten ROI bei gleichzeitig geringsten Wartungsunterbrechungen.[^31]
+
+Der Fachkräftemangel verschärft das Problem dramatisch. Python verfügt über einen Pool von weltweit 18,2 Millionen Entwicklern.[^32] Power-Platform-Spezialisten sind dagegen rar – die Nachfrage übersteigt das Angebot bei weitem, was zu Premiumgehältern und langen Besetzungszeiten führt.[^33] 87 Prozent der Organisationen haben bereits Schwierigkeiten, IT-Talente zu finden oder erwarten diese.[^32] Die Abhängigkeit von einer Nischenplattform verschärft dieses Problem unnötig. Jede offene Stelle für Power-Platform-Spezialisten konkurriert mit einem winzigen Kandidatenpool, während Python-Entwickler auf einem riesigen, globalen Arbeitsmarkt verfügbar sind.
+
+Das Ergebnis ist ein Innovationsstau. Gartner identifiziert ineffektive Governance als das Hauptproblem bei Power Apps und Power Automate.[^34] Unternehmen geben fast ebenso viel Zeit für die Behebung technischer Schulden auf (28 Prozent) wie für den Aufbau neuer Fähigkeiten (33 Prozent).[^35] Was als Werkzeug zur schnellen Innovation versprochen wurde, wird zum Bremsklotz – eine Situation, die sich Organisationen unter wachsendem Budgetdruck schlicht nicht leisten können.
+
+## Budgetdruck und Risikoabwägung: Warum jetzt der Moment für offene Werkzeuge ist
+
+Die Finanzlage der öffentlich-rechtlichen Medien in Deutschland ist angespannt wie selten zuvor. Die KEF hat ihre Empfehlung für eine Beitragserhöhung von 58 auf nur 28 Cent nach unten korrigiert.[^36] ARD und ZDF verzeichnen zusammen einen Minderertrag von über 230 Millionen Euro.[^37] Die Sparmaßnahmen treffen alle Anstalten: Der RBB baut 254 Vollzeitstellen ab, der BR muss 280 Millionen Euro einsparen, der NDR hat bereits rund 200 Stellen gestrichen, der WDR plant mit einem Defizit von 25,5 Millionen Euro für 2026.[^38] Auch die Deutsche Welle wurde von der neuen Bundesregierung unter Kulturstaatsministerin Weimer (CDU) um 10,5 Millionen Euro gekürzt – der Haushalt sinkt auf das Niveau von 2021.[^39]
+
+Der Reformstaatsvertrag, in Kraft seit Dezember 2025, verordnet strukturelle Einschnitte: Spartensender werden zusammengelegt, die Zahl der Radioprogramme sinkt von 70 auf 53, Sportrechtekosten werden auf fünf Prozent der Gesamtkosten gedeckelt.[^40] Friedrich Merz formulierte die Linie der neuen Koalition unmissverständlich: "Wir werden umfassend sparen müssen."[^41]
+
+In diesem Umfeld ist die Risikoabwägung bei Technologieentscheidungen entscheidend. Die Abhängigkeit von proprietären Plattformen mit chaotischer Lizenzierung, unvorhersehbaren Preisänderungen und hohen Fachkräftekosten ist der riskantere Weg. Gartner schätzt, dass Organisationen durch den Einsatz von Open-Source-Lösungen ihre Gesamtbetriebskosten über fünf Jahre um 30 bis 50 Prozent senken können.[^42] Eine Harvard-Studie beziffert den volkswirtschaftlichen Wert von Open-Source-Software auf 8,8 Billionen Dollar – Unternehmen müssten das 3,5-fache für Software ausgeben, wenn es Open Source nicht gäbe.[^43]
+
+Der risikoärmere Ansatz liegt auf der Hand: konsequent auf einfache, offene, textbasierte Werkzeuge setzen, deren Entwickler auf dem globalen Arbeitsmarkt verfügbar sind – und die Zusammenarbeit auf offenem Code mit Partnern in EBU und ARD etablieren. Die Infrastruktur dafür existiert bereits: die EBU mit ihren 140 GitHub-Repositories[^25] und den OSMART-Workshops[^26], die erfolgreichen Projekte wie Streaming OS, MXL SDK und der Public Spaces Incubator. Was fehlt, ist der strategische Entschluss, diese Zusammenarbeit systematisch auszubauen – gerade jetzt, wo die Mittel knapper werden und jeder Euro zählt.
 
 ## Wirtschaftlichkeit: Die Zahlen sprechen für sich
 
@@ -87,6 +105,22 @@ Die EBU betreibt 140 GitHub-Repositories[^25] und organisiert regelmäßige Open
 - **Entwicklung**: Git, GitLab, Jenkins, Kubernetes
 
 Für nahezu jeden Anwendungsfall gibt es ausgereifte Open-Source-Lösungen.
+
+**Open Source in IT-Strategien verankern:**
+
+IT-Strategien von Medienhäusern sollten Open Source als gleichwertige – und bei nachgewiesenem Vorteil bevorzugte – Option festschreiben. Entscheidend ist dabei die Betrachtung der Total Cost of Ownership (TCO) über den gesamten Lebenszyklus und mehrere Beschaffungszyklen hinweg, nicht nur der Anschaffungskosten. Die EuroStack-Initiative fordert genau dies für die europäische öffentliche Beschaffung: Bewertungskriterien müssen "die Gesamtbetriebskosten (TCO) über den gesamten Lebenszyklus der Lösung" berücksichtigen, einschließlich Ausstiegskosten proprietärer Lösungen.[^44] Open-Source- und proprietäre Lösungen sollten auf gleicher Basis bewertet werden – ein Prinzip, das auch in den Reformvorschlägen zur EU-Vergaberichtlinie 2014/24/EU verankert werden soll.[^44]
+
+ZDF-Intendant Dr. Norbert Himmler formuliert die Richtung: "Wir stellen Premiumtechnologie über eine der größten deutschen Open-Source-Initiativen allen zur Verfügung und verbessern gleichzeitig Effizienz und Transparenz."[^45] Die EBU hat mit ihrer TC Strategy Roadmap einen Rahmen geschaffen, der Open-Source-Kollaboration strategisch verankert[^46] – die einzelnen Anstalten sollten diesem Beispiel auf ihrer Ebene folgen.
+
+**Offene Alternativen bereitstellen, schulen und Gewohnheiten ändern:**
+
+Der Wechsel zu Open Source scheitert selten an der Technik – er scheitert an Gewohnheiten. Deshalb reicht es nicht, Open-Source-Werkzeuge bereitzustellen. Organisationen müssen aktiv Schulungen anbieten und Communities of Practice aufbauen, in denen Mitarbeiter neue Werkzeuge erlernen und Erfahrungen teilen. Das UK Government Digital Service macht es vor: Die GDS Academy hat über 10.000 Beamte in digitalen Fähigkeiten geschult, und Communities of Practice verbinden Fachleute über Behördengrenzen hinweg zum Austausch von Best Practices.[^47]
+
+Frankreich zeigt mit La Suite, dass die parallele Bereitstellung offener Alternativen funktioniert: Über 500.000 Beamte nutzen die Suite bereits monatlich.[^15] Allerdings hat der französische Rechnungshof auch kritisiert, dass das Angebot "für die meisten Agenten unbekannt" blieb, solange keine aktive Einführungsbegleitung stattfand[^48] – ein Beleg dafür, dass Bereitstellung ohne Schulung und Community-Arbeit nicht ausreicht. In Deutschland hat ZenDiS für openDesk bereits Ausschreibungen für Schulungsanbieter gestartet und über 80.000 Arbeitsplätze in der öffentlichen Verwaltung migriert.[^49]
+
+Ein vielversprechender Ansatz ist InnerSource – die Anwendung von Open-Source-Methoden innerhalb einer Organisation. Die BBC hat eine InnerSource-Kultur entwickelt, die interne Teams näher zusammengebracht und effizientere Softwareentwicklung ermöglicht hat.[^50] InnerSource kann als Trittstein dienen: Teams lernen zunächst intern die Zusammenarbeit auf offenem Code, bevor sie den Schritt zur externen Kollaboration mit EBU-Partnern gehen.
+
+Die EBU bietet mit ihren OSMART-Workshops und der Open Source Community auf GitHub bereits eine funktionierende Community of Practice für Broadcaster.[^26] OSMART (Open-Source Media Application Reference Tools) dient als zentraler Anlaufpunkt, an dem Entwickler Projekte vorstellen, Anwendbarkeit diskutieren und voneinander lernen.[^51] Diese Strukturen sollten ARD-Anstalten systematisch nutzen und mit eigenen internen Communities of Practice verknüpfen.
 
 **Incrementeller Wandel:**
 
@@ -156,6 +190,29 @@ Die Frage ist nicht, ob wir diesen Weg gehen sollten. Die Frage ist, wann wir an
 [^25]: GitHub: "European Broadcasting Union" (https://github.com/EBU)
 [^26]: EBU Technology & Innovation (2025): "Oh smart! Strengthening collaboration on open-source software for media" (https://tech.ebu.ch/news/2025/04/oh-smart-strengthening-collaboration-on-open-source-software-for-media)
 [^27]: IEEE Standards Association (2024): "Inspiring and Accelerating Open Source Innovation" (https://standards.ieee.org/beyond-standards/inspiring-and-accelerating-open-source-innovation/)
+[^28]: freeCodeCamp (2025): "How to Reduce Technical Debt in the Power Platform" (https://www.freecodecamp.org/news/how-to-reduce-technical-debt-in-the-power-platform/)
+[^29]: Syskit: "Power Platform Ownership: How to Avoid Orphaned Apps and Flows" (https://www.syskit.com/blog/power-platform-ownership-best-practices/)
+[^30]: Stringfest Analytics: "How to Compare Python versus Power Automate for Excel Automation" (https://stringfestanalytics.com/how-to-compare-python-versus-power-automate-for-excel-automation/)
+[^31]: Python RPA: "Power Automate Alternative: Why Python RPA is the Better Choice" (https://pythonrpa.org/power-automate-alternative-why-python-rpa-is-the-better-choice/)
+[^32]: Second Talent: "Tech Talent Shortage Statistics by Programming Language" (https://www.secondtalent.com/resources/tech-talent-shortage-statistics-by-programming-language/)
+[^33]: IT Jobs Watch: "Power Platform Job Trends" (https://www.itjobswatch.co.uk/jobs/uk/power%20platform.do)
+[^34]: Gartner: "Power Apps and Power Automate Governance" (https://www.gartner.com/en/documents/6370411)
+[^35]: Adalo: "50 Traditional Coding vs No-Code Adoption Statistics" (https://www.adalo.com/posts/traditional-coding-vs-no-code-adoption-statistics)
+[^36]: Telepolis: "Rundfunkbeitrag-Wende: Das System steht neu auf dem Prüfstand" (https://www.telepolis.de/article/Rundfunkbeitrag-Wende-Das-System-steht-neu-auf-dem-Pruefstand-11113494.html)
+[^37]: Moviepilot/ver.di: "Sparmaßnahmen zwingen ARD & ZDF zum Stellenabbau" (https://www.moviepilot.de/news/sparmassnahmen-zwingen-bei-ard-zdf-zum-stellenabbau-189021)
+[^38]: Digitalfernsehen (2025): "So sparen WDR, BR, NDR, MDR & Co." (https://www.digitalfernsehen.de/news/medien-news/politik/rundfunkreform-und-ausbleibende-beitragserhoehung-so-sparen-wdr-br-ndr-mdr-co-1166754/)
+[^39]: ver.di: "Deutsche Welle: Regierung setzt wieder Rotstift an" (https://www.verdi.de/themen/nachrichten/++co++c06cf882-c239-11f0-89a2-2dc81e0125bc)
+[^40]: ver.di/MMM: "So sollen ARD und ZDF reformiert werden" (https://mmm.verdi.de/rundfunk/so-sollen-ard-und-zdf-reformiert-werden-99469/)
+[^41]: CMS Hasche Sigle (2025): "Planungen zum Medienrecht im Koalitionsvertrag" (https://www.cmshs-bloggt.de/rechtsthemen/koalitionsvertrag-2025/planungen-zum-medienrecht-im-koalitionsvertrag/)
+[^42]: Canonical/Gartner: "The $8.8 Trillion Advantage: How Open Source Software Reduces IT Costs" (https://canonical.com/blog/the-8-8-trillion-advantage-how-open-source-software-reduces-it-costs)
+[^43]: Harvard Business School (2024): "The Value of Open Source Software" Working Paper 24-038 (https://www.hbs.edu/faculty/Pages/item.aspx?num=65230)
+[^44]: EuroStack (2025): "Position paper on EU procurement for Open Source digital sovereignty" (https://euro-stack.com/blog/2025/3/eu-procurement-for-open-source-digital-sovereignty-final)
+[^45]: ZDF Presseportal (2024): "ZDF und ARD starten Open-Source-Initiative zum gemeinsamen Streaming-Netzwerk" (https://presseportal.zdf.de/pressemitteilung/zdf-und-ard-starten-open-source-initiative-zum-gemeinsamen-streaming-netzwerk)
+[^46]: EBU Technology & Innovation: "EBU TC Strategy Roadmap" (https://tech.ebu.ch/publications/ebu-tc-strategy-roadmap)
+[^47]: UK Government Digital People Blog: "Communities of practice" (https://digitalpeople.blog.gov.uk/category/communities-of-practice/)
+[^48]: Cour des comptes, zitiert nach CIO Online: "Suite numérique, l'État français se pique (encore) de collaboratif" (https://www.cio-online.com/actualites/lire-suite-numerique-l-etat-francais-se-pique-encore-de-collaboratif-15992.html)
+[^49]: ZenDiS (2025): "ZenDiS creates additional subscription options for openDesk" (https://www.zendis.de/en/newsroom/press/zendis-creates-additional-subscription-options-for-opendesk-02)
+[^50]: O'Reilly OSCON (2019): "Learning collaboration from open source development at the BBC" (https://conferences.oreilly.com/oscon/oscon-or-2019/public/schedule/detail/75980.html)
+[^51]: EBU Technology & Innovation (2025): "Open Source Meetup - EBU @ IBC 2025" (https://tech.ebu.ch/events/2025/open-source-meetup-ebu-ibc-2025)
 
 Foto von <a href="https://unsplash.com/de/@rha2503">Ruddi Hansen</a> auf <a href="https://unsplash.com/de/fotos/ein-leuchtturm-auf-einem-dock-Xj4wUpVZ-n0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      
