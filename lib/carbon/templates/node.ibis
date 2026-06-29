@@ -111,7 +111,7 @@
                 </nav>
             {% endif %}
 
-            {% if node.mastodon_id and not (node.is_node_index or node.is_homepage_index or node.is_tag_index or node.is_tag_base or node.is_paged) %}
+            {% if node.mastodon_id and not node.is_node_index and not node.is_homepage_index and not node.is_tag_index and not node.is_tag_base and not node.is_paged %}
                 <section class="comments">
                     <h2>Comments</h2>
                     <oom-comments data-status-id="{{ node.mastodon_id }}">No comments yet</oom-comments>
