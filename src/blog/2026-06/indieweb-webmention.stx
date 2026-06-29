@@ -37,5 +37,5 @@ olav@hp4:~/Documents/indie$ curl -H 'Authorization: Bearer GEHEIMES-TOKEN' https
       "content": "<p>Wow! Das hat funktioniert. Ich kann also jetzt auf meiner statischen Website Webmentions empfangen und Reaktionen von Mastodon anzeigen, oder?</p>",
 ```
 
-Na gut, Reaktionen umgestellt auf eine server-seitige Mechanik.
+Na gut, Reaktionen umgestellt auf eine server-seitige Mechanik. Aber irgendwie werdn Reaktionen noch nicht eingesammelt.
 
