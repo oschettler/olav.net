@@ -2,12 +2,13 @@
 title: Webmentions
 author: Olav Schettler
 tags: IndieWeb
+mastodon_id: 01KWAG68VJ3GEFSTG54PEXXY21
 ---
 Es wird Zeit, dass ich diese Site mit IndieWeb-und Fediverse-Merkmalen ausstatte. Ein erster, kleiner Schritt ist gemacht: Ich habe Webmention implementiert.
 
 [Webmention-Standard beim W3C](https://www.w3.org/TR/webmention/)
 
-Der nächste Schritt ist auch gemacht. Anbindung an Mastodon. In meinem Fall an meine INstanz von GotoSocial.
+Der nächste Schritt ist auch gemacht. Anbindung an Mastodon. In meinem Fall an meine Instanz von GotoSocial.
 
 [Goto Social auf social.schettler.net](https://social.schettler.net)
 
