@@ -82,6 +82,20 @@ https://social.schettler.net/api/v1/statuses/01KWAG68VJ3GEFSTG54PEXXY21/context
 <p>
 Die Antwort kommt aber prompt: Status 401 "Unauthorized: token not supplied". Ob man - anders als in Mastodon - in GotoSocial Antworten nicht anonym abrufen darf? Da könnte ja jede:r kommen!
 </p>
+<p>
+Tatsächlich, _mit_ Token funktioniert es:
+</p>
+<p>
+`
+olav@hp4:~/Documents/indie$ curl -H 'Authorization: Bearer GEHEIMES-TOKEN' https://social.schettler.net/api/v1/statuses/01KWAG68VJ3GEFSTG54PEXXY21/context | jq .
+{
+  "descendants": [
+    {
+      "id": "01KWAJKSM7A9PS4RNB98Q81JS0",
+      ...
+      "content": "<p>Wow! Das hat funktioniert. Ich kann also jetzt auf meiner statischen Website Webmentions empfangen und Reaktionen von Mastodon anzeigen, oder?</p>",
+`
+</p>
 
             
                 <p class="tags">Tagged: &nbsp;<a href="../../blog/tags/indieweb.html">IndieWeb</a></p>
