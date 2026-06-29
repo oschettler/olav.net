@@ -11,8 +11,8 @@ Es wird Zeit, dass ich diese Site mit IndieWeb-und Fediverse-Merkmalen ausstatte
 
 Der nächste Schritt ist auch gemacht. Anbindung an Mastodon. In meinem Fall an meine Instanz von GotoSocial.
 
-[Goto Social auf social.schettler.net](https://social.schettler.net)
+[Post auf social.schettler.net](https://pinafore.social/statuses/01KWAG68VJ3GEFSTG54PEXXY21)
 
-Ein neues Post erzeugt automatisch einen Toot von @olav@schettler.net
+Mein neues, headless CMS, erzeugt für einen neuen Artikel automatisch einen Toot von @olav@schettler.net. 
 
 Reaktionen werden dann - wenn alles klappt - unter dem Post angezeigt. Das probiere ich doch gleich mal aus.
