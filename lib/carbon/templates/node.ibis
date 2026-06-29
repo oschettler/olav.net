@@ -115,6 +115,9 @@
                 <section class="comments">
                     <h2>Comments</h2>
                     <oom-comments data-status-id="{{ node.mastodon_id }}">No comments yet</oom-comments>
+                    <p class="comment-reply">
+                        <a href="https://social.schettler.net/@olav/statuses/{{ node.mastodon_id }}">Reply on Mastodon</a>
+                    </p>
                 </section>
                 <script type="module" src="@root/mastodon-comments/init.js"></script>
             {% endif %}
