@@ -16,3 +16,11 @@ Der nächste Schritt ist auch gemacht. Anbindung an Mastodon. In meinem Fall an 
 Mein neues, headless CMS, erzeugt für einen neuen Artikel automatisch einen Toot von @olav@schettler.net. 
 
 Reaktionen werden dann - wenn alles klappt - unter dem Post angezeigt. Das probiere ich doch gleich mal aus.
+
+Hm. Der Request wird abgesetzt:
+
+```
+https://social.schettler.net/api/v1/statuses/01KWAG68VJ3GEFSTG54PEXXY21/context
+```
+
+Die Antwort kommt aber prompt: Status 401 "Unauthorized: token not supplied". Ob man - anders als in Mastodon - in GotoSocial Antworten nicht anonym abrufen darf? Da könnte ja jede:r kommen!
