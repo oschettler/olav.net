@@ -69,65 +69,91 @@ Die Beiträge sind in Markdown (mit Frontmatter für ein paar Metadaten) geschri
 <a href="https://github.com/oschettler/olav.net">Die Quellen meines Blogs auf Github</a>
 </p>
 <p>
-Was mit bisher fehlte war allerdings eine bessere Einbindung ins IndieWeb und Fediverse. Das möchte ich jetzt nach und nach ändern, ohne allerdings wieder zurück zu einem datenbank-basierenden CMS zu gehen.
+Was mit bisher fehlte war allerdings eine bessere Einbindung ins IndieWeb und Fediverse. Das möchte ich jetzt nach und nach ändern, ohne allerdings wieder zurück zu einem datenbank-basierenden CMS (Content Management System, Redaktionssystem für Websites) zu gehen.
 </p>
 <p>
-Weiter möchte ich damit beginnen, neben dem Web auch in den Gemini Space zu publizieren. Wer es nicht kennt: Der Gemini Space basiert auf Textdateien in einer Art schlankem Markdown und einem stark vereinfachten Protokoll. Zu Lesen braucht man einen anderen Browser. Ich benutze Lagrange. Das ist superelegant, rattenschnell und auf all meinen Geräten verfügbar.. Dazu bekommt man ein textorientiertes Medium (gut!) ohne Bloat, Werbung oder Tracking. Es ist eine Art Alternate History - only the good bits.
+Weiter möchte ich damit beginnen, neben dem Web auch in den Gemini Space zu publizieren. Wer es nicht kennt: Der Gemini Space basiert auf Textdateien in einer Art schlankem Markdown und einem stark vereinfachten Protokoll. Zu Lesen braucht man einen anderen Browser. Ich benutze Lagrange. Das ist superelegant, rattenschnell und auf all meinen Geräten verfügbar.. Dazu bekommt man ein textorientiertes Medium (gut!) ohne Bloat, Werbung oder Tracking. Es ist eine Art Alternate History des Web - only the good bits.
 </p>
 <p>
+<a href="https://indieweb.org/">Die menschliche Alternative zum "Corporate Web"</a>
 <a href="https://geminiprotocol.net/">Homepage des Gemini-Projektes</a>
 </p>
 <p>
-Auch im Gemini Space gibt es Online Communities. Die Größte wird vom Lagrange-Entwickler betrieben. Ich habe die Software ebenfalls installiert. Daneben gibt es Suchmaschinen, Aggregatoren, Hoster, Interactive Fiction, Anbindung ans Fediverse, einfach ein schönes Paralleluniversum, von dem ich gerne ein Teil sein möchte,
+Auch im Gemini Space gibt es Online Communities. Die Größte wird vom Lagrange-Entwickler betrieben. Ich habe die Software ebenfalls installiert. Daneben gibt es Weblogs (dort: Gemlogs), Suchmaschinen, Aggregatoren, Hoster, Interactive Fiction, Anbindung ans Fediverse. Es ist einfach ein schönes Paralleluniversum, von dem ich mit diesem Blog gerne ein Teil sein möchte,
 </p>
 <p>
-Ich habe schon ein
+<a href="https://gmi.skyjake.fi/lagrange/">Lagrange Gemini Browser</a>
+<a href="https://bubble.bonn.cafe/geminispace-2025/#0">Meine Präsentation zum Geminispace vom letzen Herbst</a>
+<a href="gemini://bbs.geminispace.org">Das Gemini BBS von Lagrange-Programmierer Jaakko "skyjake" Keränen</a>
+<a href="gemini://bubble.bonn.cafe">Mein eigenes Bonner Bubble-Café ("Bubble" ist die Software)</a>
 </p>
 <p>
-Ein erster, kleiner Schritt ist gemacht: Ich habe Webmention implementiert.
+Aber ich schweife ab. Publizieren nach Gemini ist tatsächlich noch gar nicht implementiert. Die Entscheidung in diese Richtung bedeutet aber, dass ich diesen Text hier jetzt in Gemtext schreibe. Wie gesagt, dass ist eine vereinfachte Form von Markdown. Sie kann direkt (anders als Markdown) im Lagrange-Browser angezeigt werden und einfach nach Markdown gewandelt werden zur Veröffentlichung per Ark &amp; Holy ins Web.
+</p>
+<p>
+Für die geplante Integration ins IndieWeb über Webmentions und ins Fediverse über Integration mit meiner Mastodon-Node unter https://social.schettler.net brauche ich mehr als statische Seiten. Ich habe daher unter https://indie.bonn.cafe eine Installation von Pocketbase laufen und darauf mein neues Headless CMS.
+</p>
+<p>
+<a href="https://codeberg.org/olav/indie">Mein Headless CMS "indie"</a>
+<a href="https://pocketbase.io/">Pocketbase, ein schlanker Application Server in Go</a>
+<a href="https://pocketpages.dev/">PocketPages. Damit kommt fast PHP-Feeling auf</a>
+<a href="https://gotosocial.org/">GoToSocial, ein schlanker, schneller ActivityPub Server</a>
+<a href="https://en.wikipedia.org/wiki/Webmention">Webmention (Wikipedia)</a>
+</p>
+<p>
+Der Prozess sieht so aus:
+</p>
+<ul>
+<li>
+Ich schreibe meinen Artikel in einer Eingabemaske in Pocketbase. Das Format ist Gemtext
+</li>
+<li>
+Ist der Artikel bereit zur Veröffentlichung, lege ich den Schalter "published" um
+</li>
+<li>
+Dieser Schalter aktiviert ein Script, welches den Artikel und ein paar Metadaten (Titel, Bild, Tags) als Markdown in einen Ordner schreibt und nach Github veröffentlicht
+</li>
+<li>
+Auf Github laufen Ark &amp; Holy in einer Action und machen aus den Markdown HTML für diese Website
+</li>
+</ul>
+<p>
+Gleichzeitig nimmt das Script den Titel des Artikels und veröffentlicht damit einen Toot in meinem Fediverse-Knoten. Die Software dort, GotoSocial, hat keine eigene Oberfläche. Aber du kannst mir in deiner eigenen Mastodon-Instanz folgen, indem du nach "@olav@schettler.net" suchst. Die Magie des Fediverse!
+</p>
+<p>
+Das Headless CMS checkt jede Stunde, ausgelöst über einen Timer in Pocketbase, nach Reaktionen auf den Toot zu meinem Artikel, sammelt diese Reaktionen und hält sie zur Anzeige unter dem Artikel bereit.
+</p>
+<p>
+Das CMS implementiert auf einen Endpunkt für Webmention.
 </p>
 <p>
 <a href="https://www.w3.org/TR/webmention/">Webmention-Standard beim W3C</a>
 </p>
 <p>
-Der nächste Schritt ist auch gemacht. Anbindung an Mastodon. In meinem Fall an meine Instanz von GotoSocial.
+Das habe ich noch nicht intensiv getestet. Die Idee ist, dass jemand auf seinem eigenen Blog eine Reaktion auf meinen Artikel schreiben kann und diese beiden Artikel über ein Webmention verbinden kann. Das populäre Web-CMS Wordpress unterstützt diese Funktionalität über ein Plugin.
 </p>
 <p>
-<a href="https://social.schettler.net/@olav/statuses/01KWBJ99GV74Z8Y9WB4A1D0FG4">Post auf social.schettler.net</a>
+<a href="https://de.wordpress.org/plugins/webmention/">Wordpress-Plugin für Webmention</a>
 </p>
 <p>
-Mein neues, headless CMS erzeugt für einen neuen Artikel automatisch einen Toot von @olav@schettler.net.
+So weit. Ein paar Dinge fehlen noch:
+</p>
+<ul>
+<li>
+Eine RSS-Feed. Die kann ich sicher einfach in Python als Plugin in Ark nachrüsten.
+</li>
+<li>
+Publizieren in den Gemini-Space. Solange schreibe ich mein Gemlog noch von Hand
+</li>
+<li>
+Mehr Artikel zu digitaler Teilhabe und Souveränität, Gedanken zum sinnstiftenden Einsatz von KI
+</li>
+</ul>
+<p>
+<a href="gemini://olav.bonn.cafe/">Mein Gemlog imBonn.Café</a>
 </p>
 <p>
-Reaktionen werden dann - wenn alles klappt - unter dem Post angezeigt. Das probiere ich doch gleich mal aus.
-</p>
-<p>
-Hm. Der Request wird abgesetzt:
-</p>
-<p>
-`
-https://social.schettler.net/api/v1/statuses/01KWAG68VJ3GEFSTG54PEXXY21/context
-`
-</p>
-<p>
-Die Antwort kommt aber prompt: Status 401 "Unauthorized: token not supplied". Ob man - anders als in Mastodon - in GotoSocial Antworten nicht anonym abrufen darf? Da könnte ja jede:r kommen!
-</p>
-<p>
-Tatsächlich, _mit_ Token funktioniert es:
-</p>
-<p>
-`
-olav@hp4:~/Documents/indie$ curl -H 'Authorization: Bearer GEHEIMES-TOKEN' https://social.schettler.net/api/v1/statuses/01KWAG68VJ3GEFSTG54PEXXY21/context | jq .
-{
-  "descendants": [
-    {
-      "id": "01KWAJKSM7A9PS4RNB98Q81JS0",
-      ...
-      "content": "<p>Wow! Das hat funktioniert. Ich kann also jetzt auf meiner statischen Website Webmentions empfangen und Reaktionen von Mastodon anzeigen, oder?</p>",
-`
-</p>
-<p>
-Na gut, Reaktionen umgestellt auf eine server-seitige Mechanik. Aber irgendwie werdn Reaktionen noch nicht eingesammelt. Ich probiere mal, die Sichtbarkeit meiner Posts umzustellen. Die Sichtbarkeit lässt sich in GotoSocial in den Settiings einstellen.
+Das Bild oben ist natürlich nicht KI-generiert. Es gibt genügend schöne Bilder in der Wirklichkeit
 </p>
 <p>
 <a href="https://unsplash.com/de/@captainhouque">Foto von Alex Houque</a>
