@@ -3,6 +3,7 @@ title: Webmentions
 author: Olav Schettler
 date: 2026-06-29
 tags: IndieWeb
+image: blog/alex_houque_nfym_rh7k5b_u_unsplash_kj7eem681b.jpg
 mastodon_id: 01KWBJ99GV74Z8Y9WB4A1D0FG4
 ---
 Es wird Zeit, dass ich diese Site mit IndieWeb-und Fediverse-Merkmalen ausstatte. Ein erster, kleiner Schritt ist gemacht: Ich habe Webmention implementiert.
@@ -38,6 +39,8 @@ olav@hp4:~/Documents/indie$ curl -H 'Authorization: Bearer GEHEIMES-TOKEN' https
 ```
 
 Na gut, Reaktionen umgestellt auf eine server-seitige Mechanik. Aber irgendwie werdn Reaktionen noch nicht eingesammelt. Ich probiere mal, die Sichtbarkeit meiner Posts umzustellen. Die Sichtbarkeit lässt sich in GotoSocial in den Settiings einstellen.
+
+[Foto von Alex Houque](https://unsplash.com/de/@captainhouque)
 
 
 
