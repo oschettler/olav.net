@@ -1,12 +1,26 @@
 ---
-title: Webmentions
+title: "Hallo IndieWeb & Fediverse: Webmentions und GotoSocial "
 author: Olav Schettler
 date: 2026-06-29
-tags: IndieWeb
+tags: IndieWeb, Mastodon, FediVerse
 image: blog/alex_houque_nfym_rh7k5b_u_unsplash_kj7eem681b.jpg
 mastodon_id: 01KWBJ99GV74Z8Y9WB4A1D0FG4
 ---
-Es wird Zeit, dass ich diese Site mit IndieWeb-und Fediverse-Merkmalen ausstatte. Ein erster, kleiner Schritt ist gemacht: Ich habe Webmention implementiert.
+Es wird Zeit, dass ich diese Site mit IndieWeb-und Fediverse-Merkmalen ausstatte. Ich habe in 2021 hier wieder angefangen, einigermaßen regelmäßig zu bloggen. Damals hatte ich aufgeschrieben, dass ich mich für einen statischen Seitengenerator entschieden habe. Ich wollte mich aus der Pflicht zu wöchentlichen Software-Updates befreien. Das Argument gilt immer noch. Der Ivy-Seitengenerator heißt nur inzwischen Ark, sonst hat sich bis gestern am Setup aber nichts verändert. 
+
+Die Beiträge sind in Markdown (mit Frontmatter für ein paar Metadaten) geschrieben. Alles, was man zum Bloggen braucht, ist da. Ark & Holly machen daraus ansehnliche Artikel- und Übersichtsseiten.
+
+[Kolophon. Das Setup hinter olav.net](https://olav.net/blog/2021-04/ivy-holly.html)
+[Der Generator Ark von Darren Mulholland](https://github.com/dmulholl/ark)
+[Die Quellen meines Blogs auf Github](https://github.com/oschettler/olav.net)
+
+Was mit bisher fehlte war allerdings eine bessere Einbindung ins IndieWeb und Fediverse. Das möchte ich jetzt nach und nach ändern, ohne allerdings wieder zurück zu einem datenbank-basierenden CMS zu gehen. 
+
+Daneben möchte ich damit beginnen, neben dem Web auch in den Gemini Space zu publizieren. Wer es nicht kennt: Der Gemini Space basiert auf Textdateien in einer Art schlankem Markdown und einem stark vereinfachten Protokoll. Zu Lesen braucht man einen anderen Browser. Ich benutze Lagrange. Das ist superelegant, rattenschnell und auf all meinen Geräten verfügbar.. Dazu bekommt man ein textorientiertes Medium (gut!) ohne Bloat, Werbung oder Tracking. Es ist eine Art Alternate History - only the good bits.
+
+
+
+Ein erster, kleiner Schritt ist gemacht: Ich habe Webmention implementiert.
 
 [Webmention-Standard beim W3C](https://www.w3.org/TR/webmention/)
 
