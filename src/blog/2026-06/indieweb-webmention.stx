@@ -36,7 +36,7 @@ Auch im Gemini Space gibt es Online Communities. Die Größte wird vom Lagrange-
 
 Aber ich schweife ab. Publizieren nach Gemini ist tatsächlich noch gar nicht implementiert. Die Entscheidung in diese Richtung bedeutet aber, dass ich diesen Text hier jetzt in Gemtext schreibe. Wie gesagt, dass ist eine vereinfachte Form von Markdown. Sie kann direkt (anders als Markdown) im Lagrange-Browser angezeigt werden und einfach nach Markdown gewandelt werden zur Veröffentlichung per Ark & Holy ins Web.
 
-Für die geplante Integration ins IndieWeb über Webmentions und ins Fediverse über Integration mit meinem Mastodon-Knoten brauche ich mehr als statische Seiten. Ich habe daher unter https://indie.bonn.cafe eine Installation von Pocketbase laufen und darauf mein neues Headless CMS. 
+Für die geplante Integration ins IndieWeb über Webmentions und ins Fediverse über Integration mit meinem Mastodon-Knoten brauche ich mehr als statische Seiten. Ich habe daher unter indie.bonn.cafe eine Installation von Pocketbase laufen und darauf mein neues Headless CMS. 
 
 [Mein Headless CMS "indie"](https://codeberg.org/olav/indie)
 
@@ -59,7 +59,7 @@ Gleichzeitig nimmt das Script den Titel des Artikels und veröffentlicht damit e
 
 Das Headless CMS checkt jede Stunde, ausgelöst über einen Timer in Pocketbase, nach Reaktionen auf den Toot zu meinem Artikel, sammelt diese Reaktionen und hält sie zur Anzeige unter dem Artikel bereit.  
 
-Das CMS implementiert auf einen Endpunkt für Webmention.
+Das CMS implementiert auch einen Endpunkt für Webmention.
 
 [Webmention-Standard beim W3C](https://www.w3.org/TR/webmention/)
 
@@ -67,10 +67,19 @@ Das habe ich noch nicht intensiv getestet. Die Idee ist, dass jemand auf seinem 
 
 [Wordpress-Plugin für Webmention](https://de.wordpress.org/plugins/webmention/)
 
+Noch ein paar Details zum Hosting.
+
+Das Frontend läuft bei Github unter deren kostenlosen Angebot "Github Pages". Ich schäme mich ein wenig, dass ich einen Dienst von Microsoft nutze. Aber dort sind meine Seiten permanent gut aufgehoben, solange jemand die Domain olav.net bezahlt. Jörg Kantel von schockwellenreiter.de ist für Permanenz sogar einen Schritt weitergegangen und verzichtet ganz auf eigene Domain. Mal sehen.
+
+indie.bonn.cafe läuft bei mir zuhause auf einem HP Thin Client t630.
+
+bubble.bonn.cafe läuft auf einer virtuellen Maschine im Free Tier der Oracle Cloud.
+
 So weit. Ein paar Dinge fehlen noch:
 
 - Eine RSS-Feed. Die kann ich sicher einfach in Python als Plugin in Ark nachrüsten.
 - Publizieren in den Gemini-Space. Solange schreibe ich mein Gemlog noch von Hand
+- Ein Newsletter. Dave Winer und Felienne Hermans haben einen, Cory Doctorow und Dries Buytaert auch. Ich will auch einen. Mail ist toll
 - Mehr Artikel zu digitaler Teilhabe und Souveränität, Gedanken zum sinnstiftenden Einsatz von KI
 
 [Mein Gemlog imBonn.Café](gemini://olav.bonn.cafe/)
