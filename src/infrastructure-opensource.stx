@@ -2,10 +2,14 @@
 title: Warum die Infrastruktur öffentlich-rechtlicher Medien Open Source sein sollte
 author: Olav Schettler
 date: 2026-02-13
-tags: Opensource
+tags: 
+ - Open Source
+ - IT-Strategie
+ - TCO (Total Cost of Ownership)
+ - Digitale Souveränität
 image: blog/enterprise-oss-2024.jpg
 ---
-*Disclaimer: Die in diesem Beitrag vertretenen Ansichten sind meine persönlichen Meinungen und spiegeln nicht die Position meines Arbeitgebers wider.*
+*Disclaimer: Die in diesem Beitrag vertretenen Ansichten sind meine persönlichen Meinungen und spiegeln nicht die Position meines Arbeitgebers wider. Der Artikel wurde mithilfe von KI recherchiert. Ich habe noch nicht alle Quellen validiert.*
 
 Als Software-Architekt bei der Deutschen Welle erlebe ich täglich eine paradoxe Situation: Unsere Institution ist dem Gemeinwohl verpflichtet und wird aus öffentlichen Mitteln finanziert. Doch unsere technische Infrastruktur basiert weitgehend auf proprietärer Software – nicht weil dies eine bewusste strategische Entscheidung gegen Open Source wäre, sondern weil es über Jahrzehnte zur Normalität geworden ist.
 
@@ -13,19 +17,19 @@ Als Software-Architekt bei der Deutschen Welle erlebe ich täglich eine paradoxe
 
 Die Herausforderung beginnt nicht in der IT-Abteilung, sondern bei den Fachanwendern. Video-Teams verlangen nach Adobe Premiere, weil sie es seit Jahren kennen. Produktionsabteilungen wollen Avid, weil es "der Industriestandard" ist. Redaktionen setzen auf Microsoft Office, weil sie es von der Uni mitbringen. Diese Wünsche sind verständlich – sie entspringen jahrzehntelanger Prägung durch eine Branche, die von proprietären Anbietern dominiert wird.
 
-Das Problem liegt tiefer: Die meisten Fachanwender haben nie eine Alternative kennengelernt. Ihre Ausbildung, ihre bisherigen Arbeitgeber, die Konferenzen, die sie besuchen – überall begegnen sie denselben Produkten. Open-Source-Alternativen existieren oft nicht einmal in ihrem Bewusstsein. Und wenn doch, dann als "komplizierte Bastellösungen" für Enthusiasten, nicht als professionelle Werkzeuge für ernsthafte Arbeit.
+Das Problem liegt tiefer: Die meisten Fachanwender haben nie eine Alternative kennengelernt. Ihre Ausbildung, ihre bisherigen Arbeitgeber, die Konferenzen, die sie besuchen – überall begegnen sie denselben Produkten. Open-Source-Alternativen existieren oft nicht einmal in ihrem Bewusstsein. Und wenn doch, dann als "komplizierte Bastellösungen" für Nerds, nicht als professionelle Werkzeuge für ernsthafte Arbeit.
 
 Eine Unternehmens-IT, die sich gegen diese Wünsche stellt und statt vordergründig moderner, glänzend verpackter und scheinbar perfekt integrierter proprietärer Lösungen auf Open-Source-Software setzt, steht vor einer Argumentationslast. Sie muss nicht nur technisch überzeugen, sondern auch kulturell – gegen Jahrzehnte gewachsener Gewohnheiten.
 
-Dieser Artikel will diese Argumentationsgrundlage liefern. Nicht mit ideologischen Appellen, sondern mit Fakten, Studien und Beispielen, die zeigen: Open Source ist nicht nur eine machbare Alternative, sondern langfristig die wirtschaftlichere, innovativere und nachhaltigere Wahl.
+Dieser Artikel will bei der Argumentation helfen. Nicht mit ideologischen Appellen, sondern mit Fakten, Studien und Beispielen, die zeigen: Open Source ist nicht nur eine machbare Alternative, sondern langfristig die wirtschaftlichere, innovativere und nachhaltigere Wahl.
 
 ## Das Microsoft-Problem: Vendor Lock-in unter dem Deckmantel der Agilität
 
-Besonders deutlich wird die Problematik bei der fast vollständigen Abhängigkeit vieler öffentlich-rechtlicher Medien von Microsoft. Der aktuelle "Citizen Developer"-Ansatz mit PowerAutomate, PowerApps und PowerBI suggeriert Maleability und Selbstbestimmung: "Jeder kann entwickeln! Keine IT-Abteilung nötig!" Die Realität sieht anders aus.
+Besonders deutlich wird die Problematik bei der fast vollständigen Abhängigkeit vieler öffentlich-rechtlicher Medien von Microsoft. Der aktuelle "Citizen Developer"-Ansatz mit PowerAutomate, PowerApps und PowerBI suggeriert Maleability (Anpassbarkeit) und Selbstbestimmung: "Jeder kann entwickeln! Keine IT-Abteilung nötig!" Die Realität sieht anders aus.
 
 Die Tools sind überkomplex. PeerSpot-Nutzer berichten von fundamentalen Limitationen wie der "Delegation Issue" – PowerApps kann maximal 2.000 Datensätze auf einmal verarbeiten.[^1] Bei einer Oracle-Datenbank mit 150.000 Datensätzen bedeutet das: Nutzer müssen extensive Filterlogik implementieren, bevor sie überhaupt Daten sehen können. Ein Nutzer formuliert es deutlich: "Der Azure Data Layer kompliziert die Umgebung erheblich. Das minimal erforderliche Wissen bedeutet: Citizen Developer werden mit PowerApps nicht unabhängig sein."[^1]
 
-Die versprochene Einfachheit erweist sich als Illusion. Eine Studie von Pi Digital Solutions trägt den sprechenden Titel "The Rise and Fall of the Citizen Developer" und stellt fest: "Die Komplexität der heutigen digitalen Landschaft bedeutet, dass Unternehmen es sich nicht mehr leisten können, Non-Professional Developers den gesamten Prozess verwalten zu lassen – es sei denn, sie sind bereit, erhebliche technische und nicht-technische Risiken zu akzeptieren."[^2]
+Die versprochene Einfachheit erweist sich als Illusion und teure Falle. Eine Studie von Pi Digital Solutions trägt den sprechenden Titel "The Rise and Fall of the Citizen Developer" und stellt fest: "Die Komplexität der heutigen digitalen Landschaft bedeutet, dass Unternehmen es sich nicht mehr leisten können, Non-Professional Developers den gesamten Prozess verwalten zu lassen – es sei denn, sie sind bereit, erhebliche technische und nicht-technische Risiken zu akzeptieren."[^2]
 
 Selbst Microsoft intern benötigt massive Governance-Strukturen. Das Microsoft Digital Team beschreibt aufwendige Center-of-Excellence-Strukturen, Data Loss Prevention Policies, Tenant Isolation, komplexe Approval-Prozesse[^3] – das Gegenteil der versprochenen Citizen-Developer-Einfachheit.
 
