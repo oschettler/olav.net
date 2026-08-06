@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Single Purpose Devices: Warum ich Decker auf einen 30€-Bildschirm portiere
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="mailto:olav@schettler.net" rel="me">
+        <link href="https://bonn.social/@olav" rel="me">
+        <link href="https://social.schettler.net/@olav" rel="me">
+        <link href="https://bsky.app/profile/did:plc:bj3mwoudxiumv7fdf37qviin" rel="me">
+        <link href="https://indie.bonn.cafe/api/webmention" rel="webmention">
+        <link rel="stylesheet" href="../../fonts.css">
+        <link rel="stylesheet" href="../../carbon.css">
+        <link rel="stylesheet" href="../../pygments.css">
+        <link rel="stylesheet" href="../../mastodon-comments/styles.css">
+        
+        
+    </head>
+    <body class="node-blog-2026-08-decker-auf-esp32 node-blog-2026-08 node-blog node">
+        <header class="masthead">
+            <h1><a href="../../index.html">olav.net</a></h1>
+            
+                <p class="tagline">digitalisierung. bildung. gesellschaft.</p>
+            
+            <nav class="menu">
+                <input id="menu-check" type="checkbox"/>
+                <label id="menu-label" for="menu-check" class="unselectable">
+                    <span class="icon close-icon">✕</span>
+                    <span class="icon open-icon">☰</span>
+                    <span class="text">Menu</span>
+                </label>
+                <ul>
+<li><a href="https://schettler.net/">schettler.net</a></li>
+<li><a href="https://codekulturbonn.de/">Code.Kultur.Bonn</a></li>
+<li><a href="https://blog.knowfox.com/">Knowfox Blog</a></li>
+<li><a href="https://bonn.cafe">Bonn.Café</a></li>
+<li><a href="https://redshift.bonn.cafe">Topper-Jolle</a></li>
+<li><a href="/about.html">Über diese Seiten</a></li>
+</ul>
+            </nav>
+        </header>
+        <article class="main">
+            <header class="title">
+                
+                    <h1>Single Purpose Devices: Warum ich Decker auf einen 30€-Bildschirm portiere
+</h1>
+                
+                
+                    <p class="subtitle">
+                        August 6, 2026
+                    </p>
+                
+                <hr>
+            </header>
+
+            
+                <div class="image-strip">
+                    <img src="../../images/blog/img_3696_ly5y5g694o.jpg">
+                </div>
+            
+
+            <p>
+Die taz hat kürzlich über den Cyberdeck-Trend berichtet: junge Frauen bauen
+sich kleine, selbstgebaute Computer – pink, niedlich, oft in
+Muschel- oder Polly-Pocket-Gehäusen – und stellen sie auf TikTok und
+Instagram vor.<sup class="footnote" id="fnref:1"><a href="#fn:1">1</a></sup> Katrin aus Stuttgart (auf Instagram <code>miss.molerat</code>)
+baut solche Geräte seit zehn Jahren; der Philosoph Andrew Hutcheon hat
+das Phänomen akademisch untersucht. Was die Community eint, ist mehr
+als Ästhetik: Antikapitalismus, Cyberfeminismus als Gegenentwurf zur
+männlich-militärischen Optik klassischer Cyberdecks, Datenschutz durch
+eigene, unabhängige Werkzeuge statt Konzern-Überwachung, und
+Nachhaltigkeit durch Wiederverwendung statt Neukauf. Ein Post-Titel
+bringt es auf den Punkt: <i>"My Girlypop Hardware Hacking Anti-Facist
+Cyberdeck."</i>
+</p>
+<p>
+Mein Projekt hier – <a href="https://internet-janitor.itch.io/decker">Decker</a> (ein
+HyperCard-artiges Autorenwerkzeug, erfunden von John Earnest) auf einen Sunton
+ESP32-8048S070C-Board zu portieren, ein 7"-Touch-Display mit
+eingebautem ESP32-S3 für rund 30-40 Euro – ist kein Cyberdeck im
+engeren Sinn. Ein Cyberdeck ist meist ein vollwertiger,
+allzweck-fähiger Linux-Rechner in einem individuellen Gehäuse. Mein
+Gerät ist das Gegenteil: <b>absichtlich auf eine einzige Sache
+beschränkt.</b> Es kann keine E-Mails abrufen, keine Apps nachladen,
+keine Benachrichtigungen schicken. Es kann eine Sache: HyperCard-artige
+interaktive Karten-Stapel bauen und benutzen, mit Stift, Text, Buttons,
+kleinen Skripten – auf einem Gerät, das nichts anderes tut und daher
+auch nichts anderes ablenkt oder überwacht.
+</p>
+<h2 id="was-single-purpose-von-general-purpose-unterscheidet">
+Was "Single Purpose" von "General Purpose" unterscheidet
+</h2>
+<p>
+Ein Smartphone ist das ultimative General-Purpose-Gerät: Kamera,
+Kommunikationszentrale, Zahlungsmittel, Unterhaltungsmaschine,
+Arbeitsgerät, alles in einem – und alles miteinander verwoben, alles
+mit denselben Konten, denselben Trackern, denselben Benachrichtigungen
+verbunden. Das ist enorm praktisch. Es ist aber auch der Grund, warum
+es so schwer ist, sich beim Schreiben, Zeichnen oder Nachdenken nicht
+ablenken zu lassen – die Ablenkung ist im selben Gerät eingebaut wie
+das Werkzeug.
+</p>
+<p>
+Ein Single-Purpose-Gerät verzichtet bewusst auf diese Verwobenheit.
+Es ist unpraktisch für fast alles – und genau dadurch gut für die eine
+Sache, für die es gebaut wurde. Die Cyberdeck-Szene und die
+Typewriter-Bewegung (mechanische wie digitale) teilen dieses
+Prinzip, auch wenn die politischen Untertöne unterschiedlich gewichtet
+sind. Hier ist es weniger explizit politisch als bei Katrins
+"Anti-Facist Cyberdeck", aber die Grundhaltung überschneidet sich: ein
+Werkzeug besitzen und verstehen, das man selbst gebaut, portiert und
+gepatcht hat, statt eines, das man nur benutzt.
+</p>
+<h2 id="ein-gefa-keine-waffe">
+Ein Gefäß, keine Waffe
+</h2>
+<p>
+Ursula K. Le Guin hat in ihrem Essay <i>The Carrier Bag Theory of
+Fiction</i> (1986)<sup class="footnote" id="fnref:2"><a href="#fn:2">2</a></sup> eine Idee der Anthropologin Elizabeth Fisher
+aufgegriffen: Das erste menschliche Werkzeug war wahrscheinlich nicht
+der Speer, sondern das Gefäß – ein Beutel, ein Netz, eine Schlinge, um
+gesammelte Wurzeln, Nüsse und Beeren nach Hause zu tragen. Erst danach,
+lange danach, kam die Waffe. Le Guin wendet das gegen die übliche
+Erzählung von Technik und Geschichte überhaupt: die "Killer Story", in
+der ein Held mit einer Waffe linear auf ein Ziel zustürmt, ist nicht
+die einzige mögliche Form. Eine Tragetasche erzählt anders – sie sammelt
+Verschiedenes ein und hält es in Beziehung zueinander, ohne dass eines
+davon die Heldenrolle übernehmen müsste.
+</p>
+<p>
+Mein Decker-Gerät ist, in diesem Sinn, eher Tragetasche als Waffe. Es kann
+niemanden erobern: keine Aufmerksamkeit erzwingen, keine Benachrichtigung
+schicken, keinen Task "erledigen" im Sinne einer To-do-Liste, die man
+abarbeitet wie ein Beutespeer die Jagd. Es kann nur sammeln und halten –
+Text, eine Zeichnung, einen Button, ein paar Zeilen Skript – und das
+alles in Beziehung zueinander auf einer Karte, auf einem Stapel von
+Karten. "Deck", der Name, den Decker seinen Dokumenten gibt, ist
+wörtlich schon eine Tragetasche: ein Stapel, den man zusammenstellt,
+umsortiert, weiterreicht. Gerade weil das Gerät so wenig kann – keine
+Kamera, kein Messenger, kein endloser Feed –, bleibt es bei dieser einen
+Funktion: ein Gefäß für digitale Rohstoffe zu sein, die man selbst
+sammelt und ordnet, statt ein Werkzeug, das einem sagt, was als
+Nächstes zu erledigen ist. Die Beschränkung ist nicht der Mangel,
+sondern die Form – wie bei der Tragetasche selbst.
+</p>
+<h2 id="was-das-in-der-praxis-bedeutet">
+Was das in der Praxis bedeutet
+</h2>
+<p>
+Der Sunton-Board hat 8 MB PSRAM – winzig gegen jeden Laptop, aber genug
+für ein fokussiertes Werkzeug, wenn man sorgfältig damit umgeht. Ein
+Großteil der Portierungsarbeit besteht genau darin: herausfinden, wo
+der ursprünglich für Desktop-Rechner geschriebene Decker-Code Speicher
+verschwendet, der auf so einem kleinen Gerät fehlt – Kartenhintergründe
+erst dann anlegen, wenn sie wirklich gebraucht werden, sie wieder
+freigeben, wenn sie leer bleiben, jeden Bildschirm-Neuaufbau
+hinterfragen, der nicht nötig ist. Kein Cloud-Backend, keine
+Telemetrie, kein App Store – nur ein Gerät, ein Zweck, und der Code,
+der zwischen beiden vermittelt, so knapp wie möglich gehalten.
+</p>
+<p>
+Das ist am Ende dieselbe Haltung, die die taz bei den Cyberdeck-Bastlerinnen
+beschreibt, nur mit einem anderen Ergebnis: nicht ein Gerät, das alles
+kann, personalisiert in einem Muschelgehäuse – sondern eines, das
+bewusst wenig kann, dafür aber genau das, wofür man es gebaut hat. Eine
+Tragetasche, kein Speer.
+</p>
+<p>
+Die Quellen meines Projektes liegen <a href="https://github.com/oschettler/decker-esp32">auf Github</a>. Bis zu einem ersten Release ist noch einiges an Debugging und Optimierungen nötig.
+</p>
+<p>
+&mdash;
+</p>
+
+            
+                <p class="tags">Tagged: &nbsp;<a href="../../blog/tags/cyberdeck.html">CyberDeck</a></p>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+                <section class="comments">
+                    <h2>Comments</h2>
+                    <oom-comments data-status-id="01KZCG2RXD27SD2F7ZDAAMNH00">No comments yet</oom-comments>
+                    <p class="comment-reply">
+                        <a href="https://social.schettler.net/@olav/statuses/01KZCG2RXD27SD2F7ZDAAMNH00">Reply on Mastodon</a>
+                    </p>
+                </section>
+                <script type="module" src="../../mastodon-comments/init.js"></script>
+            
+
+        </article>
+        
+    </body>
+</html>
