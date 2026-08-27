@@ -10,7 +10,7 @@ Ich habe mein Wochenkontingent bei Anthropic zum Bauen eines neuen "Betriebsyste
 
 Bei "nützliche Anwendungen" bin ich an den eingebauten Anwendungen von Palm Pilots hängen geblieben: Adressbuch, Kalender, Notizen. Die einzelnen Einträge werden als Textdateien gespeichert. Zusätzlich gibt es eine SQlite-Datenbank für Volltextsuche.
 
-Eine Art Browser gehört für mich inzwischen auch dazu. Da das ganze auch auf Microcontrollern laufen soll, kommt ein voller Web-Browser aber nicht in Frage. Das Gemini-Protokoll wäre eine Option. Ich habe mich jetzt erst einmal für das noch einfachere Spartan-Protokoll entschieden. Seiten werden im Gemtext-Format, einer Art abgespecktem Markdown, abgelegt und über ein textbasierendes Protokoll unverrschlüsselt übertragen.
+Eine Art Browser gehört für mich inzwischen auch dazu. Da das ganze auch auf Microcontrollern laufen soll, kommt ein voller Web-Browser aber nicht in Frage. Das Gemini-Protokoll wäre eine Option. Ich habe mich jetzt erst einmal für das noch einfachere Spartan-Protokoll entschieden. Seiten werden im Gemtext-Format, einer Art abgespecktem Markdown, abgelegt und über ein textbasierendes Protokoll unverschlüsselt übertragen.
 
 Gemtext mit Frontmatter ist dann auch das Format der eingebauten Anwendungen. Ein Termin sieht darin z.B. so aus:
 
@@ -29,19 +29,23 @@ Die Oberfläche orientiert sich am Schwarzweiß-Modus des urspünglichen Mac OS.
 Im Urlaub hatte ich eine Visual Novel zu meiner Geschichte "Das Netzwerk" in Decker gebaut. Decker nutzt ebenfalls diesen Look. Ich finde ihn sehr hübsch und er hat den Vorteil, dass er wenig Speicher benötigt und problemlos auf einem Microcontroller laufen sollte.
 
 [Das Netzwerk als Visual Novel](https://olav.net/blog/2026-08/das-netzwerk-visual-novel.html)
+
 [Decker, ein holistisches Medium und Werkzeugkasten für digitale Kunst und Handwerk](https://internet-janitor.itch.io/decker)
 
 Ich fühle mich zu vielen der frühen Schwarzweiß-Nutzeroberflächen hingezogen
 
 [Smalltalk 80](https://en.wikipedia.org/wiki/Smalltalk)
+
 [Plan 9](https://de.wikipedia.org/wiki/Plan_9_(Betriebssystem))
+
 [Oberon](https://de.wikipedia.org/wiki/Oberon_(Programmiersprache))
 
-mirabelle nutzt Lua als eingebaute Scriptsprache. Ich habe in den vergangenen Monaten einige Experimente mit anderen Scriptsprachen gemacht: Lil (aus Decker), einen interpreter für Smalltalk, einer einfachen Sprache auf Bedrock. Ich hatte aber im Urlaub keine dieser Implementierungen dabei und wollte auch auf etwas Kleines & Funktionierendes aufsetzen. Lua ist da sicher nicht verkehrt.
+mirabelle nutzt Lua als eingebaute Scriptsprache. Ich habe in den vergangenen Monaten einige Experimente mit anderen Scriptsprachen gemacht: Lil (aus Decker), einen Interpreter für Smalltalk, einer einfachen Sprache auf Bedrock, dem Fork von UXN/Varvara von Ben Bridle. Ich hatte aber im Urlaub keine dieser Implementierungen dabei und wollte auch auf etwas Kleines & Funktionierendes aufsetzen. Lua ist da sicher nicht verkehrt.
 
 Jetzt habe ich diesen Look auch auf meinen virtuellen Computer übertragen. Ich habe die Software "mirabelle" genannt, in Anspielung an "Apple" und weil wir an ein paar schönen Mirabellenbäume in Odsherred am Strand genascht haben.
 
 [Der Quellcode des mirabelle Virtuel Computers](https://github.com/oschettler/mirabelle)
+
 [mirabelle erstes Release mit Handbuch](https://github.com/oschettler/mirabelle/releases/tag/v1.0)
 
 
