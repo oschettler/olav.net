@@ -15,13 +15,13 @@ Eine Art Browser gehört für mich inzwischen auch dazu. Da das ganze auch auf M
 Gemtext mit Frontmatter ist dann auch das Format der eingebauten Anwendungen. Ein Termin sieht darin z.B. so aus:
 
 ````
----
-id: 20260825T171647-0001
-title: Offener Burgabend, Datenburg
-date: 2026-08-25
-time: 18:00
----
-* DI.Day. WDR kommt
+---  
+id: 20260825T171647-0001  
+title: Offener Burgabend, Datenburg  
+date: 2026-08-25  
+time: 18:00  
+---  
+* DI.Day. WDR kommt  
 ````
 
 Die Oberfläche orientiert sich am Schwarzweiß-Modus des urspünglichen Mac OS. 
